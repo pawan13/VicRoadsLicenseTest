@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="action_button_secondary"></style>
+
+    <style name="action_button"></style>
+
 </resources>
