@@ -16,7 +16,7 @@
         android:layout_above="@+id/button"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:text="Question"
+        android:text="@string/question"
         android:textAlignment="center"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="26dp" />
@@ -25,7 +25,7 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:text="Score"
+        android:text="@string/score"
         android:textAlignment="center"
         tools:layout_editor_absoluteX="26dp"
         tools:layout_editor_absoluteY="60dp" />
@@ -37,20 +37,23 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="205dp"
-        android:text="Button"
+        android:text="@string/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="332dp" />
+        tools:layout_editor_absoluteY="332dp"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="374dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginBottom="18dp"
-        android:text="Button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="35dp"
+        android:text="@string/button1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="393dp" />
@@ -59,25 +62,16 @@
         android:id="@+id/button2"
         android:layout_width="374dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginBottom="89dp"
-        android:text="Button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="115dp"
+        android:text="@string/button2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="374dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="145dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="275dp" />
+
 
 </RelativeLayout>

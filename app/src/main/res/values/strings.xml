@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">VicRoads License Test</string>
+    <string name="question">Question</string>
+    <string name="score">Score</string>
+    <string name="button">Button</string>
+    <string name="button1">Button</string>
+    <string name="button2">Button</string>
+
 </resources>

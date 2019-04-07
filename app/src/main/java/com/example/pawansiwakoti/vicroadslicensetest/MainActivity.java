@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
-    Button answer1, answer2, answer3, answer4;
+    Button answer1, answer2, answer3;
     TextView score, question;
 
     private Questions mQuestions = new Questions();
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         answer1 = (Button)findViewById(R.id.button);
         answer2 = (Button)findViewById(R.id.button1);
         answer3 = (Button)findViewById(R.id.button2);
-        answer4 = (Button)findViewById(R.id.button3);
+
 
         score = (TextView) findViewById(R.id.textView2);
         question = (TextView) findViewById(R.id.textView);
@@ -82,19 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        answer4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (answer4.getText() == mAnswer) {
-                    mScore++;
-                    score.setText("Score:" + mScore);
-                    updateQuestion(r.nextInt(mQuestionsLength));
-                } else {
-                    gameover();
-                }
 
-            }
-        });
     }
     private void gameover() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
@@ -122,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
         answer1.setText(mQuestions.getChoice1(num));
         answer2.setText(mQuestions.getChoice2(num));
         answer3.setText(mQuestions.getChoice3(num));
-        answer4.setText(mQuestions.getChoice4(num));
+
 
         mAnswer = mQuestions.getmCorrectAnswers(num);
     }

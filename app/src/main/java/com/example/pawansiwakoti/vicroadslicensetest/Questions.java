@@ -73,10 +73,7 @@ public class Questions {
         String Choice = mChoices[a][2];
         return Choice;
     }
-    public String getChoice4(int a) {
-        String Choice = mChoices[a][3];
-        return Choice;
-    }
+
 
     public String getmCorrectAnswers(int a) {
         String answer = mCorrectAnswers[a];
