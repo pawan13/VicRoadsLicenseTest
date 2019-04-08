@@ -13,4 +13,8 @@ At the start of this app, it would fetch list of questions from an API and save 
 Directory structure:
 My important files like MainActivity.java, Question.java, Result.java, SplashScreen.java and prepareFortest.java are located on branch01 as:
 VicRoadsLicenseTest/app/src/main/java/com/example/pawansiwakoti/vicroadslicensetest/
-
+and their activityxml file are on
+VicRoadsLicenseTest/app/src/main/res/layout/
+other drawable and styles files are on:
+VicRoadsLicenseTest/app/src/main/res/drawable/
+VicRoadsLicenseTest/app/src/main/res/styles/
