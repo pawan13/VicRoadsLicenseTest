@@ -10,5 +10,9 @@
     <string name="good">Good!</string>
     <string name="pass_fail">Pass/Fail</string>
     <string name="_6_10">6/10</string>
+    <string name="Article">Button</string>
+    <string name="Quiz">Button</string>
+    <string name="Result">Button</string>
+    <string name="Preparation" />
 
 </resources>
