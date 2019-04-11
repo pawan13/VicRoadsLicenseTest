@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+UPDATE YOUR CHANGELOG FILE - Henry
+
 public class SplashScreen extends AppCompatActivity {
 
     @Override
