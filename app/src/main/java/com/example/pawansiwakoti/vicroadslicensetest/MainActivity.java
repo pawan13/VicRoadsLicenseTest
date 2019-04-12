@@ -49,8 +49,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 SharedPreferences settings = getSharedPreferences("MyQuizHistory",0);
                 SharedPreferences.Editor editor = settings.edit();
-                String History;
-                History = score.getText().toString();
+                String History = score.getText().toString();
                 editor.putString("History",History);
                 editor.apply();
 
@@ -119,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-    /*private void gameover() {
+    private void gameover() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
         alertDialogBuilder
                 .setMessage("GameOver! Your score is " + mScore + "points.")
@@ -141,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
                             }
 
                         });
-    }*/
+    }
     private void updateQuestion(int num) {
         question.setText(mQuestions.getQuestion(num));
         answer1.setText(mQuestions.getChoice1(num));
@@ -150,5 +149,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         mAnswer = mQuestions.getmCorrectAnswers(num);
+
     }
+
 }
