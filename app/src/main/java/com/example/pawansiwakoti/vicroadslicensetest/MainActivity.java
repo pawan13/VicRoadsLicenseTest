@@ -2,6 +2,7 @@ package com.example.pawansiwakoti.vicroadslicensetest;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,6 +15,7 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
     Button answer1, answer2, answer3;
     TextView score, question;
+    Button QuizHistory,Quit;
 
     private Questions mQuestions = new Questions();
     private String mAnswer;
@@ -39,6 +41,32 @@ public class MainActivity extends AppCompatActivity {
         score = (TextView) findViewById(R.id.textView2);
         question = (TextView) findViewById(R.id.textView);
 
+        QuizHistory = (Button)findViewById(R.id.QuizHistory);
+        Quit = (Button)findViewById(R.id.Quit);
+
+        QuizHistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedPreferences settings = getSharedPreferences("MyQuizHistory",0);
+                SharedPreferences.Editor editor = settings.edit();
+                String History = score.getText().toString();
+                editor.putString("History",History);
+                editor.apply();
+
+                Intent QuizHistory = new Intent (getApplicationContext(), QuizHistory.class);
+                startActivity(QuizHistory);
+                finish();
+            }
+        });
+        Quit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Quit = new Intent(getApplicationContext(), HomePage.class);
+                startActivity(Quit);
+                finish();
+            }
+        });
+
         updateQuestion(r.nextInt (mQuestionsLength));
 
 
@@ -47,10 +75,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (answer1.getText() == mAnswer) {
                     mScore++;
-                    score.setText("Score:" + mScore);
+                       score.setText("Score:" + mScore);
                     updateQuestion(r.nextInt(mQuestionsLength));
                 } else {
-                    gameover();
+                    mScore = mScore;
+                    score.setText("score:" + mScore);
+                    updateQuestion(r.nextInt(mQuestionsLength));
                 }
 
             }
@@ -63,7 +93,9 @@ public class MainActivity extends AppCompatActivity {
                     score.setText("Score:" + mScore);
                     updateQuestion(r.nextInt(mQuestionsLength));
                 } else {
-                    gameover();
+                    mScore = mScore;
+                    score.setText("score:" + mScore);
+                    updateQuestion(r.nextInt(mQuestionsLength));
                 }
 
 
@@ -77,7 +109,9 @@ public class MainActivity extends AppCompatActivity {
                     score.setText("Score:" + mScore);
                     updateQuestion(r.nextInt(mQuestionsLength));
                 } else {
-                    gameover();
+                    mScore = mScore;
+                    score.setText("score:" + mScore);
+                    updateQuestion(r.nextInt(mQuestionsLength));
                 }
 
             }
@@ -89,13 +123,15 @@ public class MainActivity extends AppCompatActivity {
         alertDialogBuilder
                 .setMessage("GameOver! Your score is " + mScore + "points.")
                 .setCancelable(false)
-                .setPositiveButton("NEW GAME",
-                       new DialogInterface.OnClickListener() {
-                           @Override
-                           public void onClick(DialogInterface dialogInterface, int i) {
-                               startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                           }
-                       })
+                .setPositiveButton("NEW Quiz",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                startActivity(new Intent(getApplicationContext(), HomePage.class));
+
+                            }
+
+                        })
                 .setNegativeButton("EXIT",
                         new DialogInterface.OnClickListener() {
                             @Override
@@ -113,5 +149,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         mAnswer = mQuestions.getmCorrectAnswers(num);
+
     }
+
 }

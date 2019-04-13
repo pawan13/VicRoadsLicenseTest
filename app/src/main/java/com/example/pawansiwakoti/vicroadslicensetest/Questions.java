@@ -14,7 +14,7 @@ public class Questions {
             {
                 "adjusting the radio as you drive.",
 		        "keeping your tyres at the correct pressure.",
-		        "driving safely on gravel roads"},
+		        "driving safely on gravel roads."},
 
             {
                 " They have a natural ability to drive well.",
@@ -29,7 +29,7 @@ public class Questions {
             },
 
             {
-                    "The driver of vehicle A failed to give way to vehicle B",
+                    "the driver of vehicle A failed to give way to vehicle B",
                     "the driver of vehicle B was not concentrating and didn't see vehicle A",
                     "the driver of vehicle B was travelling too fast to enter the intersection safely"
             },
@@ -50,11 +50,11 @@ public class Questions {
     private String mCorrectAnswers[] =
             {
                     "driving safely on gravel roads.",
-              "They have had lots of experience driving in different situations",
+              "They have had lots of experience driving in different situations.",
                     "The ability to identify, assess and respond to potential risks safely",
                     "the driver of vehicle A failed to give way to vehicle B",
                     "During those times when you are normally asleep",
-                    "Slow down so that you can stop if the cyclist crosses the road "
+                    "Slow down so that you can stop if the cyclist crosses the road."
             };
     public String getQuestion(int a) {
     String question = mQuestions[a];
