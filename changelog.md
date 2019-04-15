@@ -14,3 +14,7 @@
 - Feedback: I feel your project is falling a bit behind, and you're not putting in enough time to pass. Show me 10-14 hours each per week.. where was it spent? I'd like you to start writing the time taken per changelog item (in brackets at the end of each line), so that you can see where time is being spent / not being spent enough. [Henry]
 
 
+Pawan: 
+week 4: MainActivity file and question java class was created.
+week 5: Splash screen and Result java class was created.
+week 6: PrepareFortest gamehistory class was created along with few updates on the work of week 4 and 5.
