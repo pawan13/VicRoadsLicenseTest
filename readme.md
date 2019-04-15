@@ -28,3 +28,5 @@ network folder has Retrofit ClientInstance and Webservice interface
 Repository folder has AppRepository
 References:
 https://www.linkedin.com/learning/building-an-android-app-with-architecture-components?fbclid=IwAR1QWvTy-mWWa5JIhu7VHwia8D1xk_qxhnMR4OFXXzXFeEwGt8j7LCHMXs0
+
+updated retrofitClientInstance.java file
