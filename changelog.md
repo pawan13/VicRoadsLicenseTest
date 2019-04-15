@@ -15,6 +15,7 @@
 
 
 Pawan: 
-week 4: MainActivity file and question java class was created.
-week 5: Splash screen and Result java class was created.
-week 6: PrepareFortest gamehistory class was created along with few updates on the work of week 4 and 5.
+Week 3: As i already had the andorid studio, I started with updating plugin and installing sdk and creating new empty project and running it and also checked running it in my cellphone.  -5 hours.
+week 4: MainActivity file and question java class was created. -9.5 hours
+week 5: Splash screen and Result java class was created. - 11hours 
+week 6: PrepareFortest gamehistory class was created along with few updates on the work of week 4 and 5. 13hrs
