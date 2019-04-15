@@ -19,3 +19,20 @@ Week 3: As i already had the andorid studio, I started with updating plugin and 
 week 4: MainActivity file and question java class was created. -9.5 hours
 week 5: Splash screen and Result java class was created. - 11hours 
 week 6: PrepareFortest gamehistory class was created along with few updates on the work of week 4 and 5. 13hrs
+
+
+Nabin
+Week3 – 8 hours 
+•	collecting quiz model 
+Week4 – 9 hrs 
+•	Setting up the project
+•	installing required dependencies
+•	continuing working for data collection
+Week 5 and Week 6 – 23 hrs 
+•	Splash Screen has been updated
+•	Added few new folders db,model,network and repository are created: db folder has Appdatabase java class and Quiz Dao interface model folder has quiz java class network folder has Retrofit ClientInstance and Webservice interface Repository folder has AppRepository 
+•	References: https://www.linkedin.com/learning/building-an-android-app-with-architecture-components?fbclid=IwAR1QWvTy-mWWa5JIhu7VHwia8D1xk_qxhnMR4OFXXzXFeEwGt8j7LCHMXs0
+•	Continue working on API
+
+Week7: current week
+updated retrofitClientInstance.java file
