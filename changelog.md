@@ -7,3 +7,10 @@
 # Week 6, Thursday 11/April [Henry]
 - I still haven't seen any updates here?
 
+# Week 7, Monday 15 April [Henry]
+- Feedback: Good to see some minor code progress progress. [Henry]
+- Feedback: Some functions still missing function comments. [Henry]
+- Feedback: No updates to this file still??? [Henry]
+- Feedback: I feel your project is falling a bit behind, and you're not putting in enough time to pass. Show me 10-14 hours each per week.. where was it spent? I'd like you to start writing the time taken per changelog item (in brackets at the end of each line), so that you can see where time is being spent / not being spent enough. [Henry]
+
+
