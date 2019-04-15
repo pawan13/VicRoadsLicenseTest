@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClientInstance {
     private static Retrofit retrofit;
-    private static final String BASE_URL = "https://VicRoadlicenseTest.herokuapp.com";
+    private static final String BASE_URL = "https://viclicencequiz.herokuapp.com/";
     private static OkHttpClient.Builder httpClient;
     private static HttpLoggingInterceptor logging;
 
