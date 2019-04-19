@@ -1,9 +1,15 @@
 package com.example.pawansiwakoti.vicroadslicensetest.db;
 
+import android.arch.persistence.room.Database;
 import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
+import android.arch.persistence.room.TypeConverters;
 import android.content.Context;
 
+import com.example.pawansiwakoti.vicroadslicensetest.model.Quiz;
+
+@Database(entities = {Quiz.class}, version = 1)
+@TypeConverters({DateConverter.class, ArrayConverter.class})
 public abstract class AppDatabase extends RoomDatabase {
 
 
