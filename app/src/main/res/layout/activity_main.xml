@@ -46,7 +46,7 @@
         tools:layout_editor_absoluteY="202dp" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btnQuiz"
         android:layout_width="374dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -55,7 +55,7 @@
         android:layout_marginStart="14dp"
         android:layout_marginLeft="14dp"
         android:layout_marginBottom="48dp"
-        android:text="@string/button1"
+        android:text="Goto Quiz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="293dp" />

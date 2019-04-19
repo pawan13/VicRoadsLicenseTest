@@ -17,6 +17,7 @@
         <activity android:name=".HomePage" />
         <activity android:name=".PrepareFortest" />
         <activity android:name=".Result" />
+        <activity android:name=".QuizActivity"/>
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

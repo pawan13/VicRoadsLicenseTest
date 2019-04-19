@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     TextView score, question;
     Button QuizHistory,Quit;
 
+    private Button btnQuiz;
+
     private Questions mQuestions = new Questions();
     private String mAnswer;
     private int mScore = 0;
@@ -34,9 +36,16 @@ public class MainActivity extends AppCompatActivity {
         r = new Random();
 
         answer1 = (Button)findViewById(R.id.button);
-        answer2 = (Button)findViewById(R.id.button1);
+        //answer2 = (Button)findViewById(R.id.button1);
         answer3 = (Button)findViewById(R.id.button2);
 
+        btnQuiz = findViewById(R.id.btnQuiz);
+        btnQuiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, QuizActivity.class));
+            }
+        });
 
         score = (TextView) findViewById(R.id.textView2);
         question = (TextView) findViewById(R.id.textView);
@@ -75,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (answer1.getText() == mAnswer) {
                     mScore++;
-                       score.setText("Score:" + mScore);
+                    score.setText("Score:" + mScore);
                     updateQuestion(r.nextInt(mQuestionsLength));
                 } else {
                     mScore = mScore;
@@ -85,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        answer2.setOnClickListener(new View.OnClickListener() {
+        /*answer2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (answer2.getText() == mAnswer) {
@@ -97,10 +106,8 @@ public class MainActivity extends AppCompatActivity {
                     score.setText("score:" + mScore);
                     updateQuestion(r.nextInt(mQuestionsLength));
                 }
-
-
             }
-        });
+        });*/
         answer3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -144,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
     private void updateQuestion(int num) {
         question.setText(mQuestions.getQuestion(num));
         answer1.setText(mQuestions.getChoice1(num));
-        answer2.setText(mQuestions.getChoice2(num));
+        //answer2.setText(mQuestions.getChoice2(num));
         answer3.setText(mQuestions.getChoice3(num));
 
 
