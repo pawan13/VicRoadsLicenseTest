@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".QuizHistory"></activity>
+        <activity android:name=".Login"></activity>
+        <activity android:name=".Register" />
+        <activity android:name=".QuizHistory" />
         <activity android:name=".FeedBack" />
         <activity android:name=".HomePage" />
         <activity android:name=".PrepareFortest" />
