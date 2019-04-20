@@ -8,8 +8,33 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="action_button_secondary"></style>
 
-    <style name="action_button"></style>
+    <style name="option">
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/option_normal</item>
+        <item name="android:textColor">@color/light_black</item>
+    </style>
+
+    <style name="action_button" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Body2</item>
+        <item name="android:padding">20dp</item>
+        <item name="backgroundTint">#44BCF4</item>
+    </style>
+
+    <style name="action_button_secondary" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Body2</item>
+        <item name="android:padding">20dp</item>
+        <item name="backgroundTint">#FFB6B9</item>
+    </style>
 
 </resources>

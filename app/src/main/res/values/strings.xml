@@ -18,4 +18,21 @@
     <string name="quiz">Quiz</string>
     <string name="result">Result</string>
 
+    <string name="question_image">Question Image</string>
+
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+
+    <string name="text_complete">Complete</string>
+    <string name="text_next">Next</string>
+    <string name="format_x_of_y">%d of %d</string>
+    <string name="title_quiz">Quiz</string>
+
+    <string name="title_practice">Practice</string>
+
+    <string name="skip_dialog_title">Question skipped</string>
+    <string name="skip_dialog_message">%d question(s) have been skipped. Do you wish to continue?</string>
+    <string name="skip_dialog_positive_text">Continue</string>
+    <string name="skip_dialog_negative_text">Go back</string>
+
 </resources>
