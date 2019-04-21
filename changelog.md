@@ -36,3 +36,5 @@ week 6: PrepareFortest gamehistory class was created along with few updates on t
 
 #Week7: current week
 updated retrofitClientInstance.java file
+# Week 7, sunday 21 April[Pawan]
+created the login and register activity authenticating the api - 13 hours
