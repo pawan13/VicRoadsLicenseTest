@@ -38,3 +38,18 @@ week 6: PrepareFortest gamehistory class was created along with few updates on t
 updated retrofitClientInstance.java file
 # Week 7, sunday 21 April[Pawan]
 created the login and register activity authenticating the api - 13 hours
+
+
+# Week 7, Monday 19 April [Nabin] -12 hrs
+Fixed database problem 
+got number of quiz in quizactivity 
+
+
+# Week 7, Monday 20 April [Nabin] -11 hrs 
+Display Quizzes
+
+# Week 7, Monday 21 April [Nabin] -9 hrs 
+Add some java class and updated db for result quize
+
+# Week 7, Monday 22 April [Nabin] -Doing
+
