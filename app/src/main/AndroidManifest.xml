@@ -12,15 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Login"></activity>
-        <activity android:name=".Register" />
-        <activity android:name=".QuizHistory" />
+        <activity android:name=".QuizHistory"></activity>
         <activity android:name=".FeedBack" />
         <activity android:name=".HomePage" />
         <activity android:name=".PrepareFortest" />
         <activity android:name=".Result" />
         <activity android:name=".QuizActivity"/>
+        <activity android:name=".GeneralActivity"/>
         <activity android:name=".SplashScreen">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
