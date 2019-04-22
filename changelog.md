@@ -55,5 +55,6 @@ Display Quizzes
 # Week 7, Monday 21 April [Nabin] -10 hrs 
 Add some java class and updated db for result quize
 
-# Week 7, Monday 22 April [Nabin] -Doing
-
+# Week 7, Monday 22 April [Nabin] - 11 hrs
+added and updated some java class and xml
+Baseactivity/GeneralActivity/ activity_general...
