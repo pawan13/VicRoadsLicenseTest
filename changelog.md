@@ -21,19 +21,22 @@ week 5: Splash screen and Result java class was created. - 11hours
 week 6: PrepareFortest gamehistory class was created along with few updates on the work of week 4 and 5. 13hrs
 
 
-# Week 7, Monday 15 April [Nabin]
+# Week 3 and 4, Monday 15 April [Nabin] -17hrs
 #Week3 – 8 hours 
 •	collecting quiz model 
 #Week4 – 9 hrs 
 •	Setting up the project
 •	installing required dependencies
 •	continuing working for data collection
+
+# Week 5 and 6, Monday 20 April [Nabin] -23 hrs 
 #Week 5 and Week 6 – 23 hrs 
 •	Splash Screen has been updated
 •	Added few new folders db,model,network and repository are created: db folder has Appdatabase java class and Quiz Dao interface model folder has quiz java class network folder has Retrofit ClientInstance and Webservice interface Repository folder has AppRepository 
 •	References: https://www.linkedin.com/learning/building-an-android-app-with-architecture-components?fbclid=IwAR1QWvTy-mWWa5JIhu7VHwia8D1xk_qxhnMR4OFXXzXFeEwGt8j7LCHMXs0
 •	Continue working on API
 
+# Week 7, Monday 20 April [Nabin] -5 hrs 
 #Week7: current week
 updated retrofitClientInstance.java file
 # Week 7, sunday 21 April[Pawan]
