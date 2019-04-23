@@ -47,7 +47,7 @@
 
     <Button
         android:id="@+id/btnQuiz"
-        android:layout_width="374dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
@@ -55,7 +55,7 @@
         android:layout_marginStart="14dp"
         android:layout_marginLeft="14dp"
         android:layout_marginBottom="48dp"
-        android:text="Goto Quiz"
+        android:text="Practice Quiz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="293dp" />
@@ -110,5 +110,10 @@
         android:layout_marginRight="296dp"
         android:text="Start quiz" />
 
+    <Button
+        android:id="@+id/btnQuizTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnQuiz"/>
 
 </RelativeLayout>

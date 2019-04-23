@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     TextView score, question;
     Button QuizHistory,Quit;
 
-    private Button btnQuiz;
+    private Button btnQuiz, btnQuizTest;
 
     private Questions mQuestions = new Questions();
     private String mAnswer;
@@ -40,11 +40,17 @@ public class MainActivity extends AppCompatActivity {
         answer3 = (Button)findViewById(R.id.button2);
 
         btnQuiz = findViewById(R.id.btnQuiz);
-        btnQuiz.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, QuizActivity.class));
-            }
+        btnQuizTest = findViewById(R.id.btnQuizTest);
+        btnQuizTest.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, QuizActivity.class);
+            intent.putExtra(QuizActivity.ARG_IS_PRACTICE, true);
+            startActivity(intent);
+        });
+        btnQuiz.setOnClickListener(v -> {
+            // Start quiz in test mode
+            Intent intent = new Intent(MainActivity.this, QuizActivity.class);
+            intent.putExtra(QuizActivity.ARG_IS_PRACTICE, false);
+            startActivity(intent);
         });
 
         score = (TextView) findViewById(R.id.textView2);
