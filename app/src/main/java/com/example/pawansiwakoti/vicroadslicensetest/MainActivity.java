@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
         r = new Random();
 
         answer1 = (Button)findViewById(R.id.button);
-        //answer2 = (Button)findViewById(R.id.button1);
-        answer3 = (Button)findViewById(R.id.button2);
+        answer2 = (Button)findViewById(R.id.button2);
+        answer3 = (Button)findViewById(R.id.button3);
 
         btnQuiz = findViewById(R.id.btnQuiz);
         btnQuizTest = findViewById(R.id.btnQuizTest);
@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
     private void updateQuestion(int num) {
         question.setText(mQuestions.getQuestion(num));
         answer1.setText(mQuestions.getChoice1(num));
-        //answer2.setText(mQuestions.getChoice2(num));
+        answer2.setText(mQuestions.getChoice2(num));
         answer3.setText(mQuestions.getChoice3(num));
 
 

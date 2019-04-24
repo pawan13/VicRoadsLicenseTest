@@ -53,8 +53,11 @@ got number of quiz in quizactivity
 Display Quizzes
 
 # Week 7, Monday 21 April [Nabin] -10 hrs 
-Add some java class and updated db for result quize
+Add some java class and updated db for result quiz
 
 # Week 7, Monday 22 April [Nabin] - 11 hrs
 added and updated some java class and xml
 Baseactivity/GeneralActivity/ activity_general...
+
+# Week 7, Monday 23 April [Nabin] - 8 hrs
+added some java class and xml  for result quiz
