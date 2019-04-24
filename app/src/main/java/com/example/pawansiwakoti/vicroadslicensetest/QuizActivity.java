@@ -18,7 +18,6 @@ import com.example.pawansiwakoti.vicroadslicensetest.databinding.ActivityQuizBin
 import com.example.pawansiwakoti.vicroadslicensetest.model.Answers;
 import com.example.pawansiwakoti.vicroadslicensetest.model.Quiz;
 import com.example.pawansiwakoti.vicroadslicensetest.repository.AppRepository;
-import com.example.pawansiwakoti.vicroadslicensetest.ResultFragment;
 
 import java.util.ArrayList;
 import java.util.Date;
