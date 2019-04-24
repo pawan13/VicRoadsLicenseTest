@@ -17,9 +17,6 @@
     <string name="articles">Articles</string>
     <string name="quiz">Quiz</string>
     <string name="result">Result</string>
-    <string name="textview">TextView</string>
-    <string name="example_gmail_com">example@gmail.com</string>
-    <string name="password">********</string>
 
     <string name="question_image">Question Image</string>
 
@@ -37,7 +34,13 @@
     <string name="skip_dialog_message">%d question(s) have been skipped. Do you wish to continue?</string>
     <string name="skip_dialog_positive_text">Continue</string>
     <string name="skip_dialog_negative_text">Go back</string>
-    <string name="login">login</string>
-    <string name="register_me">Register Me</string>
+
+    <string name="feedback_success">Nice!</string>
+    <string name="feedback_fail">Opps!</string>
+    <string name="display_result_format">%d/%d</string>
+    <string name="title_result">Result</string>
+
+    <string name="result_pass_or_fail">Result: Pass or Fail</string>
+
 
 </resources>
