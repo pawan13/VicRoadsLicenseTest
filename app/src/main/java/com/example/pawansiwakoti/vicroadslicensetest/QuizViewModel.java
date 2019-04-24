@@ -6,6 +6,7 @@ import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.support.annotation.NonNull;
 
+import com.example.pawansiwakoti.vicroadslicensetest.model.Answers;
 import com.example.pawansiwakoti.vicroadslicensetest.model.Quiz;
 import com.example.pawansiwakoti.vicroadslicensetest.repository.AppRepository;
 
@@ -67,6 +68,10 @@ public class QuizViewModel extends AndroidViewModel {
 
     public void setPractice(boolean practice) {
         isPractice = practice;
+    }
+
+    public void saveAnswers(List<Answers> answers) {
+
     }
 
 //    public void updateCredits(int totalCorrectAnswer) {

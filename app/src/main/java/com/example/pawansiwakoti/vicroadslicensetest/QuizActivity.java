@@ -1,23 +1,24 @@
 package com.example.pawansiwakoti.vicroadslicensetest;
 
-import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v4.view.ViewPager;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
 import com.example.pawansiwakoti.vicroadslicensetest.databinding.ActivityQuizBinding;
+import com.example.pawansiwakoti.vicroadslicensetest.model.Answers;
 import com.example.pawansiwakoti.vicroadslicensetest.model.Quiz;
 import com.example.pawansiwakoti.vicroadslicensetest.repository.AppRepository;
+import com.example.pawansiwakoti.vicroadslicensetest.ResultFragment;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -205,11 +206,11 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         int totalCorrectAnswer = 0;
         String randomId = UUID.randomUUID().toString();
         //Todo
-        /*List<Answers> answers = new ArrayList<>();
+        List<Answers> answers = new ArrayList<>();
         for (Quiz quiz : mQuizList) {
             boolean skipped = !answerMap.containsKey(quiz.getId());
             String selectedAnswer = !skipped ? quiz.getOptions()[answerMap.get(quiz.getId())] : null;
-            String rightAnswer = quiz.getOptions()[quiz.getAnswer()];
+            String rightAnswer = quiz.getOptions()[quiz.getAnswer()-1];
             boolean isCorrectAns = !skipped && (answerMap.get(quiz.getId()) == quiz.getAnswer());
             if (isCorrectAns) totalCorrectAnswer++;
             Answers answer = new Answers(randomId, quiz.getId(),
@@ -217,10 +218,9 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
             answers.add(answer);
         }
         viewModel.saveAnswers(answers);
-        viewModel.updateCredits(totalCorrectAnswer);
         Intent intent = GeneralActivity.getIntent(this, ResultFragment.class, ResultFragment.class.getSimpleName(), "Result");
         intent.putExtra(ResultFragment.ARG_SESSION_ID, randomId);
-        startActivity(intent);*/
+        startActivity(intent);
         finish();
     }
 
