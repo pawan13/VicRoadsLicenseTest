@@ -61,3 +61,6 @@ Baseactivity/GeneralActivity/ activity_general...
 
 # Week 7, Monday 23 April [Nabin] - 8 hrs
 added some java class and xml  for result quiz
+
+# Week 7, Monday 24 April [Nabin] - 7 hrs
+added ResultFragment.java and layout fragment_quiz_result.xml and string.xml
