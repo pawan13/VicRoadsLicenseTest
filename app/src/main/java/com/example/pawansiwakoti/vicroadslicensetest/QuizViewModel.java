@@ -58,9 +58,9 @@ public class QuizViewModel extends AndroidViewModel {
         currentPagerPosition = position;
     }
 
-//    public void saveAnswers(List<Answers> answers) {
-//        mRepository.saveAnswers(answers);
-//    }
+    public void saveAnswers(List<Answers> answers) {
+        mRepository.saveAnswers(answers);
+    }
 
     public boolean isPractice() {
         return isPractice;
@@ -70,11 +70,4 @@ public class QuizViewModel extends AndroidViewModel {
         isPractice = practice;
     }
 
-    public void saveAnswers(List<Answers> answers) {
-
-    }
-
-//    public void updateCredits(int totalCorrectAnswer) {
-//        mRepository.updateCredits(totalCorrectAnswer);
-//    }
 }
