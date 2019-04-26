@@ -64,3 +64,6 @@ added some java class and xml  for result quiz
 
 # Week 7, Monday 24 April [Nabin] - 7 hrs
 added ResultFragment.java and layout fragment_quiz_result.xml and string.xml
+
+# Week 7, Monday 25 April [Nabin] - 9.5 hrs
+updated db files, some updated on java, xml files and drawable
