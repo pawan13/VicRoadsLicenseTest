@@ -9,6 +9,7 @@ import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v7.app.ActionBar;
 import android.view.View;
 
+import com.example.pawansiwakoti.vicroadslicensetest.databinding.ActivityQuizResultBinding;
 
 public class QuizResultActivity extends BaseActivity implements View.OnClickListener {
     public static final String ARG_TOTAL = "arg_total";
@@ -25,7 +26,7 @@ public class QuizResultActivity extends BaseActivity implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_result);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_quiz_result);
 
         setupActionbar();
         Intent intent = getIntent();

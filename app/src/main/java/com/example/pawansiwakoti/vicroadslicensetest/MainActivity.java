@@ -112,3 +112,57 @@ public class MainActivity extends AppCompatActivity {
                     score.setText("score:" + mScore);
                     updateQuestion(r.nextInt(mQuestionsLength));
                 }
+            }
+        });*/
+        answer3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (answer3.getText() == mAnswer) {
+                    mScore++;
+                    score.setText("Score:" + mScore);
+                    updateQuestion(r.nextInt(mQuestionsLength));
+                } else {
+                    mScore = mScore;
+                    score.setText("score:" + mScore);
+                    updateQuestion(r.nextInt(mQuestionsLength));
+                }
+
+            }
+        });
+
+    }
+    private void gameover() {
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
+        alertDialogBuilder
+                .setMessage("GameOver! Your score is " + mScore + "points.")
+                .setCancelable(false)
+                .setPositiveButton("NEW Quiz",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                startActivity(new Intent(getApplicationContext(), HomePage.class));
+
+                            }
+
+                        })
+                .setNegativeButton("EXIT",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                finish();
+                            }
+
+                        });
+    }
+    private void updateQuestion(int num) {
+        question.setText(mQuestions.getQuestion(num));
+        answer1.setText(mQuestions.getChoice1(num));
+        //answer2.setText(mQuestions.getChoice2(num));
+        answer3.setText(mQuestions.getChoice3(num));
+
+
+        mAnswer = mQuestions.getmCorrectAnswers(num);
+
+    }
+
+}

@@ -114,6 +114,12 @@
         android:id="@+id/btnQuizTest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/btnQuiz"/>
+        android:layout_alignTop="@+id/btnQuiz"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="42dp"
+        android:layout_toEndOf="@+id/btnQuiz"
+        android:text="Test Quiz" />
+
 
 </RelativeLayout>

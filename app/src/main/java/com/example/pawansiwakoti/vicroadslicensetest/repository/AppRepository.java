@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.util.Log;
 
 import com.example.pawansiwakoti.vicroadslicensetest.db.AppDatabase;
+import com.example.pawansiwakoti.vicroadslicensetest.model.Answers;
 import com.example.pawansiwakoti.vicroadslicensetest.model.Quiz;
 import com.example.pawansiwakoti.vicroadslicensetest.network.RetrofitClientInstance;
 import com.example.pawansiwakoti.vicroadslicensetest.network.WebService;
@@ -92,6 +93,22 @@ public class AppRepository {
 
     public LiveData<List<Quiz>> getRecentQuizes(int max) {
         return appDatabase.quizDao().getRecentQuizes(max);
+    }
+
+    public LiveData<List<Answers>> getAllAnswers() {
+        return appDatabase.answerDao().getAll();
+    }
+
+    public LiveData<List<Answers>> getAnswersBySession(String sessionId) {
+        return appDatabase.answerDao().getAnswersBySession(sessionId);
+    }
+
+    public LiveData<List<Quiz>> getFrequentlyWrongedQuiz() {
+        return appDatabase.answerDao().getFrequentlyWrongedQuizzes(5);
+    }
+
+    public void saveAnswers(final List<Answers> answers) {
+        executor.execute(() -> appDatabase.answerDao().insertAll(answers));
     }
 
 }
