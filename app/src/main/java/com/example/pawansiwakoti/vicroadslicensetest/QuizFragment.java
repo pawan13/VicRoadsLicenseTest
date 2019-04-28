@@ -1,5 +1,7 @@
 package com.example.pawansiwakoti.vicroadslicensetest;
 
+import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProvider;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Context;
 import android.databinding.DataBindingUtil;
@@ -7,16 +9,22 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+
 import com.example.pawansiwakoti.vicroadslicensetest.databinding.CellQuizQuestionBinding;
 import com.example.pawansiwakoti.vicroadslicensetest.model.Quiz;
 import com.squareup.picasso.Picasso;
+//import com.squareup.picasso.Target;
 
+
+import java.nio.FloatBuffer;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class QuizFragment extends Fragment {
@@ -65,14 +73,20 @@ public class QuizFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         viewModel = ViewModelProviders.of(getActivity()).get(QuizViewModel.class);
-        viewModel.getAllQuizes().observe(getViewLifecycleOwner(), quizzes -> {
-            currentQuiz = CommonMethods.filterQuizById(quizzes, quizId);
-            modelToUI();
+        viewModel.getAllQuizes().observe(getViewLifecycleOwner(), new Observer<List<Quiz>>() {
+            @Override
+            public void onChanged(@Nullable List<Quiz> quizzes) {
+                currentQuiz = CommonMethods.filterQuizById(quizzes, quizId);
+                QuizFragment.this.modelToUI();
+            }
         });
-        viewModel.getOptionMap().observe(getViewLifecycleOwner(), stringIntegerHashMap -> {
-            if (stringIntegerHashMap != null && stringIntegerHashMap.containsKey(quizId)) {
-                selectedOptionIndex = stringIntegerHashMap.get(quizId);
-                modelToUI();
+        viewModel.getOptionMap().observe(getViewLifecycleOwner(), new Observer<HashMap<String, Integer>>() {
+            @Override
+            public void onChanged(@Nullable HashMap<String, Integer> stringIntegerHashMap) {
+                if (stringIntegerHashMap != null && stringIntegerHashMap.containsKey(quizId)) {
+                    selectedOptionIndex = stringIntegerHashMap.get(quizId);
+                    QuizFragment.this.modelToUI();
+                }
             }
         });
     }

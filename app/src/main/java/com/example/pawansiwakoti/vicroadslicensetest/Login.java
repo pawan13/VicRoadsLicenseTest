@@ -26,10 +26,10 @@ final String urllogin = "https://www.edu.au/~pksiwako/login_user.php";
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Email = (EditText) findViewById(R.id.et_email);
+        /*Email = (EditText) findViewById(R.id.et_email);
         Password = (EditText) findViewById(R.id.et_password);
         Login = (Button) findViewById(R.id.btn_login);
-        Register = (TextView) findViewById(R.id.tv_register);
+        Register = (TextView) findViewById(R.id.tv_register);*/
 
 
         Register.setOnClickListener(new View.OnClickListener() {

@@ -44,4 +44,3 @@ public interface AnswerDao {
     @Query("select q.* from answers a inner join quiz q on a.quiz_id = q.id where a.correctly_answered = 0 group by a.quiz_id  order by count(a.id) desc limit :maxRecords")
     LiveData<List<Quiz>> getFrequentlyWrongedQuizzes(int maxRecords);
 }
-
