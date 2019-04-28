@@ -72,5 +72,6 @@ updated db files, some updated on java, xml files and drawable
 fixed some db file and java
 
 
-#Easter break, [pawan] -17hrs created quiz result activity and
- quiz activity. Also fixed many errors
+# Week 7 Easter break, [pawan] 
+-17hrs created quiz result activity and
+ quiz activity. Also fixed errors
