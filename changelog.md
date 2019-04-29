@@ -75,3 +75,6 @@ fixed some db file and java
 # Week 7 Easter break, [pawan] 
 -17hrs created quiz result activity and
  quiz activity. Also fixed errors
+ 
+ # Week 7, Monday 28 April [Nabin] - 6 hrs
+ Fixed quiz fragment, Dispaly Result
