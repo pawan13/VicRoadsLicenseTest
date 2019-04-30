@@ -8,6 +8,9 @@ import android.support.v4.app.Fragment;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 
+/**
+ * General activity to display multiple fragments, including ResultFragment
+ */
 public class GeneralActivity extends BaseActivity {
 
     public static final String ARG_FRAGMENT_CLASSNAME = "arg_fragment_classname";

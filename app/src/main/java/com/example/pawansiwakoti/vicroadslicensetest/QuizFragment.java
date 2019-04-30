@@ -27,6 +27,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+/**
+ * Fragment to display one instance of quiz, which would have question, image, and options
+ */
 public class QuizFragment extends Fragment {
     public static final String KEY_QUIZ_DATA = "key_quiz_data";
     private QuizViewModel viewModel;

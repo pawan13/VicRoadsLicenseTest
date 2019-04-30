@@ -10,6 +10,9 @@ import com.example.pawansiwakoti.vicroadslicensetest.model.Quiz;
 
 import java.util.List;
 
+/**
+ * DAO for managing (insert, delete and other queries) quizzes
+ */
 @Dao
 public interface QuizDao {
 

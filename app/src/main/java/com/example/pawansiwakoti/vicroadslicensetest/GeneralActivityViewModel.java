@@ -11,6 +11,9 @@ import com.example.pawansiwakoti.vicroadslicensetest.repository.AppRepository;
 
 import java.util.List;
 
+/**
+ * ViewModel class to manage view data for general activity
+ */
 public class GeneralActivityViewModel extends AndroidViewModel {
 
     private AppRepository mRepository;

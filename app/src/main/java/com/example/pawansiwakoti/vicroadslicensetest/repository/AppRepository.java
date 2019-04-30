@@ -19,6 +19,9 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/**
+ * Singleton class to act as repository for data used in the app
+ */
 public class AppRepository {
     private static final String TAG = AppRepository.class.getSimpleName();
 

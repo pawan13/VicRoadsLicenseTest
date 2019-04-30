@@ -5,6 +5,9 @@ import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+/**
+ * Singleton class to manage network connection using retorfit
+ */
 public class RetrofitClientInstance {
     private static Retrofit retrofit;
     private static final String BASE_URL = "https://viclicencequiz.herokuapp.com";

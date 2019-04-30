@@ -9,6 +9,10 @@ import android.content.Context;
 import com.example.pawansiwakoti.vicroadslicensetest.model.Answers;
 import com.example.pawansiwakoti.vicroadslicensetest.model.Quiz;
 
+/**
+ * SQLite database used throughout this app
+ * It is a singleton class synchronized among different threads
+ */
 @Database(entities = {Quiz.class, Answers.class}, version = 2)
 @TypeConverters({DateConverter.class, ArrayConverter.class})
 public abstract class AppDatabase extends RoomDatabase {

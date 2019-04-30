@@ -109,9 +109,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         viewModel = ViewModelProviders.of(this).get(QuizViewModel.class);
         viewModel.getAllQuizes().observe(this, quizzes -> {
             if (quizzes == null) return;
-            // Todo
-            //List<Quiz> randomQuizzes = CommonMethods.INSTANCE.getRandomXQuizzes(quizzes, Constants.MAX_QUIZ_PER_ATTEMPT);
-            List<Quiz> randomQuizzes = quizzes;
+            List<Quiz> randomQuizzes = CommonMethods.getRandomXQuizzes(quizzes, 10);
             mQuizList = randomQuizzes;
             createAndSetFragments(randomQuizzes);
         });
@@ -120,6 +118,11 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         viewModel.getOptionMap().observe(this, stringIntegerHashMap -> answerMap = stringIntegerHashMap);
     }
 
+    /**
+     * Function to create fragments for each quiz and add to pager adapter
+     * @param quizzes
+     * @example createAndSetFragments(quizzesFromApi)
+     */
     private void createAndSetFragments(@NonNull List<Quiz> quizzes) {
         if (fragments == null) {
             fragments = new ArrayList<>();
