@@ -13,14 +13,14 @@ import android.widget.TextView;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
-    Button answer1, answer2, answer3;
-    TextView score, question;
+   // Button answer1, answer2, answer3;
+    //TextView score, question;
     Button QuizHistory,Quit;
 
     private Button btnQuiz, btnQuizTest;
 
     private Questions mQuestions = new Questions();
-    private String mAnswer;
+   // private String mAnswer;
     private int mScore = 0;
     private int mQuestionsLength = mQuestions.mQuestions.length;
 
@@ -35,9 +35,9 @@ public class MainActivity extends AppCompatActivity {
 
         r = new Random();
 
-        answer1 = (Button)findViewById(R.id.button);
+        // answer1 = (Button)findViewById(R.id.button);
         //answer2 = (Button)findViewById(R.id.button1);
-        answer3 = (Button)findViewById(R.id.button2);
+        //answer3 = (Button)findViewById(R.id.button2);
 
         btnQuiz = findViewById(R.id.btnQuiz);
         btnQuizTest = findViewById(R.id.btnQuizTest);
@@ -53,26 +53,26 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        score = (TextView) findViewById(R.id.textView2);
-        question = (TextView) findViewById(R.id.textView);
+        //score = (TextView) findViewById(R.id.textView2);
+        // question = (TextView) findViewById(R.id.textView);
 
-        QuizHistory = (Button)findViewById(R.id.QuizHistory);
-        Quit = (Button)findViewById(R.id.Quit);
+        QuizHistory = (Button) findViewById(R.id.QuizHistory);
+        Quit = (Button) findViewById(R.id.Quit);
 
-        QuizHistory.setOnClickListener(new View.OnClickListener() {
+       /* QuizHistory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 SharedPreferences settings = getSharedPreferences("MyQuizHistory",0);
                 SharedPreferences.Editor editor = settings.edit();
-                String History = score.getText().toString();
-                editor.putString("History",History);
+                //String History = score.getText().toString();
+                //editor.putString("History",History);
                 editor.apply();
 
                 Intent QuizHistory = new Intent (getApplicationContext(), QuizHistory.class);
                 startActivity(QuizHistory);
                 finish();
             }
-        });
+        });*/
         Quit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        updateQuestion(r.nextInt (mQuestionsLength));
+       /* updateQuestion(r.nextInt (mQuestionsLength));
 
 
         answer1.setOnClickListener(new View.OnClickListener() {
@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });*/
-        answer3.setOnClickListener(new View.OnClickListener() {
+       /* answer3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (answer3.getText() == mAnswer) {
@@ -130,8 +130,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-    }
-    private void gameover() {
+    }*/
+   /* private void gameover() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
         alertDialogBuilder
                 .setMessage("GameOver! Your score is " + mScore + "points.")
@@ -163,6 +163,7 @@ public class MainActivity extends AppCompatActivity {
 
         mAnswer = mQuestions.getmCorrectAnswers(num);
 
-    }
+    }*/
 
+    }
 }

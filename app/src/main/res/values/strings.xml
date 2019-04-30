@@ -41,6 +41,10 @@
     <string name="title_result">Result</string>
 
     <string name="result_pass_or_fail">Result: Pass or Fail</string>
+    <string name="practice_quiz">Practice Quiz</string>
+    <string name="quizhistory">QuizHistory</string>
+    <string name="quit">Quit</string>
+    <string name="test_quiz">Test Quiz</string>
 
 
 </resources>
