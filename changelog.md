@@ -35,7 +35,7 @@ week 6: PrepareFortest gamehistory class was created along with few updates on t
 •	Added few new folders db,model,network and repository are created: db folder has Appdatabase java class and Quiz Dao interface model folder has quiz java class network folder has Retrofit ClientInstance and Webservice interface Repository folder has AppRepository 
 •	References: https://www.linkedin.com/learning/building-an-android-app-with-architecture-components?fbclid=IwAR1QWvTy-mWWa5JIhu7VHwia8D1xk_qxhnMR4OFXXzXFeEwGt8j7LCHMXs0
 
-# Week 7, Monday 20 April [Nabin] -9 hrs 
+# Week 7, Monday 15 April [Nabin] -9 hrs 
 #Week7: current week
 updated retrofitClientInstance.java file
  working on API
@@ -44,31 +44,31 @@ updated retrofitClientInstance.java file
 created the login and register activity authenticating the api - 13 hours
 
 
-# Week 7, Monday 19 April [Nabin] -12 hrs
+# Week 7, Friday 19 April [Nabin] -12 hrs
 Fixed database problem 
 got number of quiz in quizactivity 
 
 
-# Week 7, Monday 20 April [Nabin] -11 hrs 
+# Week 7, Saturday 20 April [Nabin] -11 hrs 
 Display Quizzes
 
-# Week 7, Monday 21 April [Nabin] -10 hrs 
+# Week 7, Sunday 21 April [Nabin] -10 hrs 
 Add some java class and updated db for result quiz
 
 # Week 7, Monday 22 April [Nabin] - 11 hrs
 added and updated some java class and xml
 Baseactivity/GeneralActivity/ activity_general...
 
-# Week 7, Monday 23 April [Nabin] - 8 hrs
+# Week 7, Tuesday 23 April [Nabin] - 8 hrs
 added some java class and xml  for result quiz
 
-# Week 7, Monday 24 April [Nabin] - 7 hrs
+# Week 7, Wednesday 24 April [Nabin] - 7 hrs
 added ResultFragment.java and layout fragment_quiz_result.xml and string.xml
 
-# Week 7, Monday 25 April [Nabin] - 9.5 hrs
+# Week 7, Thursday 25 April [Nabin] - 9.5 hrs
 updated db files, some updated on java, xml files and drawable
 
-# Week 7, Monday 26 April [Nabin] - 8 hrs
+# Week 7, Friday 26 April [Nabin] - 8 hrs
 fixed some db file and java
 
 
@@ -76,5 +76,9 @@ fixed some db file and java
 -17hrs created quiz result activity and
  quiz activity. Also fixed errors
  
- # Week 7, Monday 28 April [Nabin] - 6 hrs
+ # Week 7, Sunday 28 April [Nabin] - 6 hrs
  Fixed quiz fragment, Dispaly Result
+
+
+ # Week 8, Monday 30 April [Nabin]
+ Add action bar, randomise quize, commented code, error fixed
