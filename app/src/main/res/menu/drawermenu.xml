@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    tools:shownIn="navigation_view"
+    >
+    <item
+        android:id="@+id/db"
+        android:title="@string/dashboard"/>
+    <item
+        android:id="@+id/article"
+        android:title="@string/article"/>
+    <item
+        android:id="@+id/video"
+        android:title="@string/video"/>
+    <item
+        android:id="@+id/startQuiz"
+        android:title="@string/startquiz"/>
+    <item
+        android:id="@+id/feedback"
+        android:title="@string/feedback"/>
+    <item
+        android:id="@+id/logout"
+        android:title="@string/logout"/>
+
+</menu>
