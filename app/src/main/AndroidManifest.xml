@@ -3,7 +3,7 @@
     package="com.example.pawansiwakoti.vicroadslicensetest">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,15 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".QuizHistory"></activity>
+        <activity android:name=".Video"></activity>
+        <activity android:name=".QuizHistory" />
         <activity android:name=".FeedBack" />
         <activity android:name=".HomePage" />
         <activity android:name=".PrepareFortest" />
         <activity android:name=".Result" />
-        <activity android:name=".QuizActivity"/>
-        <activity android:name=".GeneralActivity"/>
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".GeneralActivity" />
         <activity android:name=".SplashScreen">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
