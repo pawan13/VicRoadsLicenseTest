@@ -10,6 +10,11 @@ import com.example.pawansiwakoti.vicroadslicensetest.model.Answers;
 import com.example.pawansiwakoti.vicroadslicensetest.model.Quiz;
 import com.example.pawansiwakoti.vicroadslicensetest.network.RetrofitClientInstance;
 import com.example.pawansiwakoti.vicroadslicensetest.network.WebService;
+import com.example.pawansiwakoti.vicroadslicensetest.FeedbackFragment;
+import com.example.pawansiwakoti.vicroadslicensetest.network.FeedbackSchema;
+import com.example.pawansiwakoti.vicroadslicensetest.WebServiceListener;
+import com.example.pawansiwakoti.vicroadslicensetest.network.ApiResponse;
+import com.example.pawansiwakoti.vicroadslicensetest.StringUtils;
 
 import java.util.List;
 import java.util.concurrent.Executor;
@@ -40,6 +45,29 @@ public class AppRepository {
     private AppRepository(Context context) {
         appDatabase = AppDatabase.getAppDatabase(context.getApplicationContext());
         webService = RetrofitClientInstance.getRetrofitInstance().create(WebService.class);
+    }
+
+
+
+    /********** Feedback ********/
+    public void sendFeedback(FeedbackSchema feedback, final WebServiceListener listener) {
+        Call<ApiResponse> call = webService.submitFeedback(feedback);
+        call.enqueue(new Callback<ApiResponse>() {
+            @Override
+            public void onResponse(Call<ApiResponse> call, Response<ApiResponse> response) {
+                if (listener != null) {
+                    listener.onFeedbackSubmit(response.body());
+                }
+                Log.d(TAG, "onResponse: " + response.toString());
+            }
+
+            @Override
+            public void onFailure(Call<ApiResponse> call, Throwable t) {
+                if (listener != null) {
+                    listener.onFeedbackSubmit(null);
+                }
+            }
+        });
     }
 
 

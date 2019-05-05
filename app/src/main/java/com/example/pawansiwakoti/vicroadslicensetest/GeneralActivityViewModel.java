@@ -7,7 +7,9 @@ import android.support.annotation.NonNull;
 
 import com.example.pawansiwakoti.vicroadslicensetest.model.Answers;
 import com.example.pawansiwakoti.vicroadslicensetest.model.Quiz;
+import com.example.pawansiwakoti.vicroadslicensetest.network.FeedbackSchema;
 import com.example.pawansiwakoti.vicroadslicensetest.repository.AppRepository;
+import com.example.pawansiwakoti.vicroadslicensetest.WebServiceListener;
 
 import java.util.List;
 
@@ -34,5 +36,9 @@ public class GeneralActivityViewModel extends AndroidViewModel {
 
     public LiveData<List<Quiz>> getFrequentlyWrongedQuiz() {
         return mRepository.getFrequentlyWrongedQuiz();
+    }
+
+    public void sendFeedback(FeedbackSchema feedback, WebServiceListener listener) {
+       mRepository.sendFeedback(feedback, listener);
     }
 }
