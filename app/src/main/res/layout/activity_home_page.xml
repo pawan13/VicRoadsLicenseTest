@@ -10,11 +10,14 @@
         android:layout_height="match_parent"
         tools:context=".HomePage">
     <LinearLayout
+        android:id="@+id/LLayout"
+        android:orientation="vertical"
         android:background="@drawable/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </LinearLayout>
     <android.support.design.widget.NavigationView
+        android:id="@+id/Navigation"
         app:headerLayout="@layout/header"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
