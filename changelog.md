@@ -86,3 +86,7 @@ fixed some db file and java
  # Week 8.Sunday 5 May [pawan] - 24 hrs
  Updated mainactivity, navigation updated
 Feedback, video page 
+
+ # Week 8.Sunday 5 May [Nabin] 
+added ApiResponse, FeedbackSchema,BaseFragment,FeedBackFragment,WebServiceListener and fragment_feedback.xml for layout
+connected feedback to database
