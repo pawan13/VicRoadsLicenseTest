@@ -19,6 +19,9 @@
         android:id="@+id/feedback"
         android:title="@string/feedback"/>
     <item
+        android:id="@+id/emailus"
+        android:title="Email Us"/>
+    <item
         android:id="@+id/logout"
         android:title="@string/logout"/>
 

@@ -3,12 +3,11 @@ package com.example.pawansiwakoti.vicroadslicensetest;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class FeedBack extends AppCompatActivity {
+public class Email extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +27,7 @@ public class FeedBack extends AppCompatActivity {
             }
             catch (Exception e)
             {
-                Toast.makeText(FeedBack.this, "There are no Email Clients",Toast.LENGTH_SHORT).show();
+                Toast.makeText(Email.this, "There are no Email Clients",Toast.LENGTH_SHORT).show();
             }
         });
     }

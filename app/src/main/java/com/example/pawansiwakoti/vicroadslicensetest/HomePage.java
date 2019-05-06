@@ -88,6 +88,9 @@ public class HomePage extends AppCompatActivity {
             case R.id.startQuiz:
                 startQuiz();
                 break;
+            case R.id.emailus:
+                Email();
+                break;
             case R.id.feedback:
                feedback();
                 break;
@@ -133,5 +136,8 @@ public class HomePage extends AppCompatActivity {
         Intent intent = GeneralActivity.getIntent(this, FeedbackFragment.class,
                 FeedbackFragment.class.getSimpleName(), "Feedback");
         startActivity(intent);
+    }
+    private void Email(){
+        startActivity(new Intent(this, Email.class));
     }
 }
