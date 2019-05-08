@@ -3,8 +3,11 @@ package com.example.pawansiwakoti.vicroadslicensetest;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.databinding.DataBindingUtil;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.support.annotation.NonNull;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
@@ -23,6 +26,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.UUID;
 
 public class QuizActivity extends AppCompatActivity implements View.OnClickListener, QuizFragment.OnItemClickListener{
@@ -31,14 +35,24 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     private AppRepository appRepository;
 
     public static final String ARG_IS_PRACTICE = "arg_is_practice";
+    private static long COUNTDOWN_IN_MILLIS = 2700000;
 
     private QuizViewModel viewModel;
     private ActivityQuizBinding mBinding;
+    private TextView txtCountDown;
     private QuizesSlidePagerAdapter mPagerAdapter;
     private List<QuizFragment> fragments;
     private HashMap<String, Integer> answerMap;
     private List<Quiz> mQuizList;
     private boolean isPractice;
+
+
+
+    //private ColorStateList textColorDefaultRb;
+    private ColorStateList textColorDefaultCd;
+
+    private CountDownTimer countDownTimer;
+    private long timeLeftInMillis;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,12 +66,18 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         initViewModel();
         mBinding.buttonNext.setOnClickListener(this);
         mBinding.buttonPrev.setOnClickListener(this);
+         txtCountDown = findViewById(R.id.txtcountdown);
+
+        textColorDefaultCd = txtCountDown.getTextColors();
+        timeLeftInMillis = COUNTDOWN_IN_MILLIS;
+        startCountDown();
     }
 
     private void initViewPager() {
         mPagerAdapter = new QuizesSlidePagerAdapter(getSupportFragmentManager(), null);
         mBinding.viewpagerQuiz.setAdapter(mPagerAdapter);
         mBinding.viewpagerQuiz.addOnPageChangeListener(mListener);
+
     }
 
     private ViewPager.OnPageChangeListener mListener = new ViewPager.OnPageChangeListener() {
@@ -78,6 +98,38 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
         }
     };
+   private void startCountDown() {
+        countDownTimer = new CountDownTimer(timeLeftInMillis, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                timeLeftInMillis = millisUntilFinished;
+                updateCountDownText();
+            }
+
+            @Override
+            public void onFinish() {
+                timeLeftInMillis = 0;
+                displayResult();
+                //updateCountDownText();
+
+            }
+        }.start();
+    }
+    private void updateCountDownText() {
+        int minutes = (int) (timeLeftInMillis / 1000) / 60;
+        int seconds = (int) (timeLeftInMillis / 1000) % 60;
+
+        String timeFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
+
+        txtCountDown.setText(timeFormatted);
+
+        if (timeLeftInMillis < 300000) {
+            txtCountDown.setTextColor(Color.RED);
+        } else {
+            txtCountDown.setTextColor(textColorDefaultCd);
+        }
+    }
+
 
     private boolean isLastPage() {
         return mBinding.viewpagerQuiz.getCurrentItem() == fragments.size() - 1;
@@ -92,6 +144,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         mBinding.buttonNext.setText(isComplete ? getString(R.string.text_complete) : getString(R.string.text_next));
         if (isComplete) {
             mBinding.buttonNext.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_check_white_24dp, 0);
+
         } else {
             mBinding.buttonNext.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_chevron_right_white_24dp, 0);
         }
@@ -237,7 +290,12 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(int position) {
         changeQuiz(true);
     }
-
-
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (countDownTimer != null) {
+            countDownTimer.cancel();
+        }
+    }
 
 }

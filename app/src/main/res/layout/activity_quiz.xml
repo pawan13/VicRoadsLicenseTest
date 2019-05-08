@@ -45,7 +45,16 @@
                 android:drawableEnd="@drawable/ic_chevron_right_white_24dp"
                 android:text="@string/next" />
         </LinearLayout>
-
+        <TextView
+            android:id="@+id/txtcountdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="45:00"
+            android:textColor="@android:color/black"
+            android:textSize="40sp" />
 
         <TextView
             android:id="@+id/text_current_status"
