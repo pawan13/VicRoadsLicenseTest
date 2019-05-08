@@ -90,3 +90,10 @@ Feedback, video page
  # Week 8.Sunday 5 May [Nabin] 
 added ApiResponse, FeedbackSchema,BaseFragment,FeedBackFragment,WebServiceListener and fragment_feedback.xml for layout
 connected feedback to database
+
+# Week 9, Wednesday 8/May [Henry]
+- Good progress. Glad to see it's getting closer. Final stretch now. 
+- Make sure you go over everything in the Grading Criteria super carefully, to ensure you meet each point.
+
+
+
