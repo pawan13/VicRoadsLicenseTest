@@ -163,7 +163,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         viewModel = ViewModelProviders.of(this).get(QuizViewModel.class);
         viewModel.getAllQuizes().observe(this, quizzes -> {
             if (quizzes == null) return;
-            List<Quiz> randomQuizzes = CommonMethods.getRandomXQuizzes(quizzes, 10);
+            List<Quiz> randomQuizzes = CommonMethods.getRandomXQuizzes(quizzes, 30);
             mQuizList = randomQuizzes;
             createAndSetFragments(randomQuizzes);
         });
@@ -266,7 +266,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
             boolean skipped = !answerMap.containsKey(quiz.getId());
             String selectedAnswer = !skipped ? quiz.getOptions()[answerMap.get(quiz.getId())] : null;
             String rightAnswer = quiz.getOptions()[quiz.getAnswer()-1];
-            boolean isCorrectAns = !skipped && (answerMap.get(quiz.getId()) == quiz.getAnswer());
+            boolean isCorrectAns = !skipped && (answerMap.get(quiz.getId()) == (quiz.getAnswer()-1));
             if (isCorrectAns) totalCorrectAnswer++;
             Answers answer = new Answers(randomId, quiz.getId(),
                     skipped, selectedAnswer, rightAnswer, isCorrectAns, new Date());

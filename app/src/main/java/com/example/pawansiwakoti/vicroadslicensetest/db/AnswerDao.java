@@ -11,6 +11,11 @@ import com.example.pawansiwakoti.vicroadslicensetest.model.Quiz;
 
 import java.util.List;
 
+/**
+ * This interface is responsible for querying answers table,
+ * inserting, deleting answers from database as well as total numberof
+ * answers in database
+ */
 @Dao
 public interface AnswerDao {
 

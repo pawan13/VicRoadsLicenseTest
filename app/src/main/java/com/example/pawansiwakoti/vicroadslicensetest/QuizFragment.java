@@ -118,7 +118,7 @@ public class QuizFragment extends Fragment {
                         textView.setBackground(getResources().getDrawable(R.drawable.option_normal));
                     } else {
                         if (i == selectedOptionIndex) {
-                            if (i != currentQuiz.getAnswer()) {
+                            if (i != (currentQuiz.getAnswer()-1)) {
                                 textView.setTextColor(getResources().getColor(R.color.white));
                                 textView.setBackground(getResources().getDrawable(R.drawable.option_in_correct));
                             } else {
@@ -126,7 +126,7 @@ public class QuizFragment extends Fragment {
                                 textView.setBackground(getResources().getDrawable(R.drawable.option_correct));
                             }
                         } else {
-                            if (i == currentQuiz.getAnswer()) {
+                            if (i == (currentQuiz.getAnswer()-1)) {
                                 textView.setTextColor(getResources().getColor(R.color.white));
                                 textView.setBackground(getResources().getDrawable(R.drawable.option_correct));
                             } else {

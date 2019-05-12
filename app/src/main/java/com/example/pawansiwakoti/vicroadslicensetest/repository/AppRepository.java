@@ -48,7 +48,6 @@ public class AppRepository {
     }
 
 
-
     /********** Feedback ********/
     public void sendFeedback(FeedbackSchema feedback, final WebServiceListener listener) {
         Call<ApiResponse> call = webService.submitFeedback(feedback);
