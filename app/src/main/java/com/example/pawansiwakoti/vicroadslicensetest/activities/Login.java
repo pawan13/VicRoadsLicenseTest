@@ -1,4 +1,4 @@
-package com.example.pawansiwakoti.vicroadslicensetest;
+package com.example.pawansiwakoti.vicroadslicensetest.activities;
 
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.pawansiwakoti.vicroadslicensetest.R;
 
 import okhttp3.FormBody;
 import okhttp3.OkHttpClient;
@@ -36,7 +38,7 @@ final String urllogin = "https://www.edu.au/~pksiwako/login_user.php";
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Login.this,
-                        Register.class);
+                        com.example.pawansiwakoti.vicroadslicensetest.activities.Register.class);
                 startActivity(i);
             }
         });

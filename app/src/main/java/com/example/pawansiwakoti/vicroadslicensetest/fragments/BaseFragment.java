@@ -1,4 +1,4 @@
-package com.example.pawansiwakoti.vicroadslicensetest;
+package com.example.pawansiwakoti.vicroadslicensetest.fragments;
 
 import android.support.v4.app.Fragment;
 

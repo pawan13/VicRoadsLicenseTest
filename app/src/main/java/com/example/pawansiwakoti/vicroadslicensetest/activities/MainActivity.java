@@ -1,14 +1,13 @@
-package com.example.pawansiwakoti.vicroadslicensetest;
+package com.example.pawansiwakoti.vicroadslicensetest.activities;
 
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
+
+import com.example.pawansiwakoti.vicroadslicensetest.utils.Questions;
+import com.example.pawansiwakoti.vicroadslicensetest.R;
 
 import java.util.Random;
 

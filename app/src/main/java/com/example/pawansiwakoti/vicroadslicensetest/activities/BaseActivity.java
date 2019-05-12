@@ -1,4 +1,4 @@
-package com.example.pawansiwakoti.vicroadslicensetest;
+package com.example.pawansiwakoti.vicroadslicensetest.activities;
 
 import android.content.Intent;
 import android.net.Uri;

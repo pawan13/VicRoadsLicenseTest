@@ -1,4 +1,4 @@
-package com.example.pawansiwakoti.vicroadslicensetest;
+package com.example.pawansiwakoti.vicroadslicensetest.activities;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
@@ -9,7 +9,7 @@ import com.example.pawansiwakoti.vicroadslicensetest.model.Answers;
 import com.example.pawansiwakoti.vicroadslicensetest.model.Quiz;
 import com.example.pawansiwakoti.vicroadslicensetest.network.FeedbackSchema;
 import com.example.pawansiwakoti.vicroadslicensetest.repository.AppRepository;
-import com.example.pawansiwakoti.vicroadslicensetest.WebServiceListener;
+import com.example.pawansiwakoti.vicroadslicensetest.interfaces.WebServiceListener;
 
 import java.util.List;
 

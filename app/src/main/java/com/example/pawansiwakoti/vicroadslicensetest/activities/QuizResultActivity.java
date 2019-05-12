@@ -1,4 +1,4 @@
-package com.example.pawansiwakoti.vicroadslicensetest;
+package com.example.pawansiwakoti.vicroadslicensetest.activities;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
@@ -9,6 +9,10 @@ import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v7.app.ActionBar;
 import android.view.View;
 
+import com.example.pawansiwakoti.vicroadslicensetest.R;
+import com.example.pawansiwakoti.vicroadslicensetest.activities.BaseActivity;
+import com.example.pawansiwakoti.vicroadslicensetest.activities.MainActivity;
+import com.example.pawansiwakoti.vicroadslicensetest.activities.QuizActivity;
 import com.example.pawansiwakoti.vicroadslicensetest.databinding.ActivityQuizResultBinding;
 
 public class QuizResultActivity extends BaseActivity implements View.OnClickListener {

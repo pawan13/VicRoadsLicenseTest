@@ -1,4 +1,4 @@
-package com.example.pawansiwakoti.vicroadslicensetest;
+package com.example.pawansiwakoti.vicroadslicensetest.activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,6 +7,9 @@ import android.os.PersistableBundle;
 import android.support.v4.app.Fragment;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
+
+import com.example.pawansiwakoti.vicroadslicensetest.R;
+import com.example.pawansiwakoti.vicroadslicensetest.utils.StringUtils;
 
 /**
  * General activity to display multiple fragments, including ResultFragment

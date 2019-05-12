@@ -1,4 +1,4 @@
-package com.example.pawansiwakoti.vicroadslicensetest;
+package com.example.pawansiwakoti.vicroadslicensetest.utils;
 
 public class StringUtils {
     public static boolean isNullOrEmpty(String string) {

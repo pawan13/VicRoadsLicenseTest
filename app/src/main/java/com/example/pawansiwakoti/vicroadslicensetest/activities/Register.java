@@ -1,4 +1,4 @@
-package com.example.pawansiwakoti.vicroadslicensetest;
+package com.example.pawansiwakoti.vicroadslicensetest.activities;
 
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.pawansiwakoti.vicroadslicensetest.R;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;

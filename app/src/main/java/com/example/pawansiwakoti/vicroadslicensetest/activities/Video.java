@@ -1,9 +1,13 @@
-package com.example.pawansiwakoti.vicroadslicensetest;
+package com.example.pawansiwakoti.vicroadslicensetest.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+
+import com.example.pawansiwakoti.vicroadslicensetest.R;
+import com.example.pawansiwakoti.vicroadslicensetest.adapters.VideoAdapter;
+import com.example.pawansiwakoti.vicroadslicensetest.model.YouTubeVideos;
 
 import java.util.Vector;
 

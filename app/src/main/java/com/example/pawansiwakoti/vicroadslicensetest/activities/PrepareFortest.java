@@ -1,4 +1,4 @@
-package com.example.pawansiwakoti.vicroadslicensetest;
+package com.example.pawansiwakoti.vicroadslicensetest.activities;
 
 import android.app.Activity;
 import android.support.v4.app.Fragment;
@@ -8,6 +8,8 @@ import android.view.Window;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import com.example.pawansiwakoti.vicroadslicensetest.R;
 
 public class PrepareFortest extends Activity {
 

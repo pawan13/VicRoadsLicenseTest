@@ -1,9 +1,11 @@
-package com.example.pawansiwakoti.vicroadslicensetest;
+package com.example.pawansiwakoti.vicroadslicensetest.activities;
 
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.example.pawansiwakoti.vicroadslicensetest.R;
 
 public class QuizHistory extends AppCompatActivity {
  TextView textView;

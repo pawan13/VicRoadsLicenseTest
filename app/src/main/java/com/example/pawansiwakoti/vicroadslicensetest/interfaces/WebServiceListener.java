@@ -1,4 +1,4 @@
-package com.example.pawansiwakoti.vicroadslicensetest;
+package com.example.pawansiwakoti.vicroadslicensetest.interfaces;
 
 import com.example.pawansiwakoti.vicroadslicensetest.network.ApiResponse;
 

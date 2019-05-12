@@ -1,4 +1,4 @@
-package com.example.pawansiwakoti.vicroadslicensetest;
+package com.example.pawansiwakoti.vicroadslicensetest.activities;
 
 import android.arch.lifecycle.Observer;
 import android.content.Context;
@@ -10,6 +10,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.example.pawansiwakoti.vicroadslicensetest.R;
 import com.example.pawansiwakoti.vicroadslicensetest.repository.AppRepository;
 
 //UPDATE YOUR CHANGELOG FILE - Henry

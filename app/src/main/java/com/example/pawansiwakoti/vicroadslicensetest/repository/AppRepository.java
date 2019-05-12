@@ -2,7 +2,6 @@ package com.example.pawansiwakoti.vicroadslicensetest.repository;
 
 import android.arch.lifecycle.LiveData;
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.util.Log;
 
 import com.example.pawansiwakoti.vicroadslicensetest.db.AppDatabase;
@@ -10,11 +9,9 @@ import com.example.pawansiwakoti.vicroadslicensetest.model.Answers;
 import com.example.pawansiwakoti.vicroadslicensetest.model.Quiz;
 import com.example.pawansiwakoti.vicroadslicensetest.network.RetrofitClientInstance;
 import com.example.pawansiwakoti.vicroadslicensetest.network.WebService;
-import com.example.pawansiwakoti.vicroadslicensetest.FeedbackFragment;
 import com.example.pawansiwakoti.vicroadslicensetest.network.FeedbackSchema;
-import com.example.pawansiwakoti.vicroadslicensetest.WebServiceListener;
+import com.example.pawansiwakoti.vicroadslicensetest.interfaces.WebServiceListener;
 import com.example.pawansiwakoti.vicroadslicensetest.network.ApiResponse;
-import com.example.pawansiwakoti.vicroadslicensetest.StringUtils;
 
 import java.util.List;
 import java.util.concurrent.Executor;

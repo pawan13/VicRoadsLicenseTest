@@ -1,7 +1,6 @@
-package com.example.pawansiwakoti.vicroadslicensetest;
+package com.example.pawansiwakoti.vicroadslicensetest.fragments;
 
 import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProvider;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Context;
 import android.databinding.DataBindingUtil;
@@ -9,20 +8,22 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 
+import com.example.pawansiwakoti.vicroadslicensetest.utils.CommonMethods;
+import com.example.pawansiwakoti.vicroadslicensetest.R;
+import com.example.pawansiwakoti.vicroadslicensetest.utils.StringUtils;
+import com.example.pawansiwakoti.vicroadslicensetest.activities.QuizViewModel;
 import com.example.pawansiwakoti.vicroadslicensetest.databinding.CellQuizQuestionBinding;
 import com.example.pawansiwakoti.vicroadslicensetest.model.Quiz;
 import com.squareup.picasso.Picasso;
 //import com.squareup.picasso.Target;
 
 
-import java.nio.FloatBuffer;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -40,7 +41,7 @@ public class QuizFragment extends Fragment {
     private int selectedOptionIndex = -1;
     private List<OnItemClickListener> listeners;
 
-    interface OnItemClickListener{
+    public interface OnItemClickListener{
         void onClick(int position);
     }
 

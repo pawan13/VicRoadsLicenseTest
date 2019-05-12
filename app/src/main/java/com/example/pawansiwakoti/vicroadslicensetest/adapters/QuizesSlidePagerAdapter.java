@@ -1,8 +1,10 @@
-package com.example.pawansiwakoti.vicroadslicensetest;
+package com.example.pawansiwakoti.vicroadslicensetest.adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+
+import com.example.pawansiwakoti.vicroadslicensetest.fragments.QuizFragment;
 
 import java.util.List;
 

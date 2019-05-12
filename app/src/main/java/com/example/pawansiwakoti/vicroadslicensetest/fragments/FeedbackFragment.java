@@ -1,11 +1,10 @@
-package com.example.pawansiwakoti.vicroadslicensetest;
+package com.example.pawansiwakoti.vicroadslicensetest.fragments;
 
 import android.arch.lifecycle.ViewModelProviders;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.design.widget.TextInputLayout;
 import android.support.design.widget.TextInputLayout;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -15,20 +14,23 @@ import android.view.ViewGroup;
 
 //import androidx.databinding.DataBindingUtil;
 
+import com.example.pawansiwakoti.vicroadslicensetest.utils.AlertUtils;
+import com.example.pawansiwakoti.vicroadslicensetest.activities.GeneralActivityViewModel;
 import com.example.pawansiwakoti.vicroadslicensetest.R;
+import com.example.pawansiwakoti.vicroadslicensetest.utils.StringUtils;
+import com.example.pawansiwakoti.vicroadslicensetest.interfaces.WebServiceListener;
 import com.example.pawansiwakoti.vicroadslicensetest.databinding.FragmentFeedbackBinding;
-import com.example.pawansiwakoti.vicroadslicensetest.WebServiceListener;
 import com.example.pawansiwakoti.vicroadslicensetest.network.ApiResponse;
 import com.example.pawansiwakoti.vicroadslicensetest.network.FeedbackSchema;
-import com.example.pawansiwakoti.vicroadslicensetest.GeneralActivityViewModel;
-import com.example.pawansiwakoti.vicroadslicensetest.AlertUtils;
-import com.example.pawansiwakoti.vicroadslicensetest.StringUtils;
 
 
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * Screen to send feedback regarding the app or anything else
+ * This will ask for email, name and message and will be saved in server
+ */
 public class FeedbackFragment extends BaseFragment implements View.OnClickListener, WebServiceListener {
     private FragmentFeedbackBinding mBinding;
     private GeneralActivityViewModel mViewModel;

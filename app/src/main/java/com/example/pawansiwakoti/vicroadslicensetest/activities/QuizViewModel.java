@@ -1,4 +1,4 @@
-package com.example.pawansiwakoti.vicroadslicensetest;
+package com.example.pawansiwakoti.vicroadslicensetest.activities;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
@@ -26,12 +26,12 @@ public class QuizViewModel extends AndroidViewModel {
         map = new HashMap<>();
     }
 
-    LiveData<List<Quiz>> getAllQuizes() {
+    public LiveData<List<Quiz>> getAllQuizes() {
         //return mRepository.getAllQuizes();
         return mRepository.getAllQuizes();
     }
 
-    void setOption(String id, int answerIndex) {
+    public void setOption(String id, int answerIndex) {
         if (map == null) {
             map = new HashMap<>();
         }
@@ -39,7 +39,7 @@ public class QuizViewModel extends AndroidViewModel {
         liveMap.setValue(map);
     }
 
-    LiveData<HashMap<String, Integer>> getOptionMap() {
+    public LiveData<HashMap<String, Integer>> getOptionMap() {
         if (liveMap == null) {
             liveMap = new MutableLiveData<>();
         }
@@ -50,11 +50,11 @@ public class QuizViewModel extends AndroidViewModel {
         return liveMap;
     }
 
-    int getCurrentPagerLocation() {
+    public int getCurrentPagerLocation() {
         return currentPagerPosition;
     }
 
-    void setCurrentPagerPosition(int position) {
+    public void setCurrentPagerPosition(int position) {
         currentPagerPosition = position;
     }
 

@@ -1,4 +1,4 @@
-package com.example.pawansiwakoti.vicroadslicensetest;
+package com.example.pawansiwakoti.vicroadslicensetest.activities;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
@@ -10,6 +10,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.pawansiwakoti.vicroadslicensetest.R;
+import com.example.pawansiwakoti.vicroadslicensetest.activities.MainActivity;
+import com.example.pawansiwakoti.vicroadslicensetest.activities.SplashScreen;
 import com.example.pawansiwakoti.vicroadslicensetest.databinding.ActivityResultBinding;
 
 public class Result extends AppCompatActivity implements View.OnClickListener{

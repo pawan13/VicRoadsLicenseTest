@@ -1,4 +1,4 @@
-package com.example.pawansiwakoti.vicroadslicensetest;
+package com.example.pawansiwakoti.vicroadslicensetest.activities;
 
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.DialogInterface;
@@ -17,10 +17,16 @@ import android.view.View;
 import android.widget.TextView;
 
 
+import com.example.pawansiwakoti.vicroadslicensetest.utils.CommonMethods;
+import com.example.pawansiwakoti.vicroadslicensetest.fragments.QuizFragment;
+import com.example.pawansiwakoti.vicroadslicensetest.adapters.QuizesSlidePagerAdapter;
+import com.example.pawansiwakoti.vicroadslicensetest.R;
+import com.example.pawansiwakoti.vicroadslicensetest.fragments.ResultFragment;
 import com.example.pawansiwakoti.vicroadslicensetest.databinding.ActivityQuizBinding;
 import com.example.pawansiwakoti.vicroadslicensetest.model.Answers;
 import com.example.pawansiwakoti.vicroadslicensetest.model.Quiz;
 import com.example.pawansiwakoti.vicroadslicensetest.repository.AppRepository;
+import com.example.pawansiwakoti.vicroadslicensetest.utils.AlertUtils;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -29,7 +35,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.UUID;
 
-public class QuizActivity extends AppCompatActivity implements View.OnClickListener, QuizFragment.OnItemClickListener{
+public class QuizActivity extends AppCompatActivity implements View.OnClickListener, QuizFragment.OnItemClickListener {
 
     private TextView tvQuizCount;
     private AppRepository appRepository;

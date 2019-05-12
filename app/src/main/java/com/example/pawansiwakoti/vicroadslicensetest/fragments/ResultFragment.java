@@ -1,4 +1,4 @@
-package com.example.pawansiwakoti.vicroadslicensetest;
+package com.example.pawansiwakoti.vicroadslicensetest.fragments;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
@@ -15,6 +15,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.pawansiwakoti.vicroadslicensetest.R;
+import com.example.pawansiwakoti.vicroadslicensetest.activities.GeneralActivityViewModel;
+import com.example.pawansiwakoti.vicroadslicensetest.activities.MainActivity;
+import com.example.pawansiwakoti.vicroadslicensetest.activities.QuizActivity;
 import com.example.pawansiwakoti.vicroadslicensetest.databinding.FragmentQuizResultBinding;
 import com.example.pawansiwakoti.vicroadslicensetest.model.Answers;
 

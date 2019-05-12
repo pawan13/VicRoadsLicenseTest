@@ -1,4 +1,4 @@
-package com.example.pawansiwakoti.vicroadslicensetest;
+package com.example.pawansiwakoti.vicroadslicensetest.utils;
 
 import com.example.pawansiwakoti.vicroadslicensetest.model.Quiz;
 
