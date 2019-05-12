@@ -95,7 +95,7 @@ connected feedback to database
 - Good progress. Glad to see it's getting closer. Final stretch now. 
 - Make sure you go over everything in the Grading Criteria super carefully, to ensure you meet each point.
 
-#Week 9 update 
+# Week 9 update 
 Errors fixed and worked on polishing
 Timer created for the quiz 
 
