@@ -44,7 +44,6 @@ inserting, deleting answers from database as well as total numberof answers in d
 
 
 AppDatabase
-
 -SQLite database used throughout this app
 -It is a singleton class synchronized among different threads
 
@@ -62,12 +61,15 @@ Date Converter
 RetrofitClientInstance
 -Singleton class to manage network connection using retrofit
 
+
 AppRepository
 -Singleton class to act as repository for data used in the app
+
 
 FeedbackFragment
 -Screen to send feedback regarding the app or anything else
 -This will ask for email, name and message and will be saved in server
+
 
 QuizFragment
 -Fragment to display one instance of quiz, which would have question, image, and options
