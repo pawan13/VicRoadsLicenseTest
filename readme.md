@@ -18,12 +18,19 @@ At the start of this app, it would fetch list of questions from an API and save 
 
 
 Directory structure:
-My important files like , db folder,model folder, network folder, repository folderare located on  as:
+Our folders like activities, adapters, db,fragments,interfaces,model,network repository and utils are located on
 VicRoadsLicenseTest/app/src/main/java/com/example/pawansiwakoti/vicroadslicensetest/
-and their activityxml file are on
+
+activity.xml file like activity_feed-back, activity_home_page.xml, activity_general, activity_login.xml,activity_main.xml,activity_Prepare_Fortest.xm, activty_quiz.xml, activity_quiz_history.xml, activity_quiz_result.xml, activity_register,activity_result, activity_splash_screen.xml,activity_video.xml,cell_quiz-question.xml,header.xml,login_loyout.xml,register_layout.xml,video_view.xml are on
 VicRoadsLicenseTest/app/src/main/res/layout/
-other drawable and styles files are on:
+
+fragments like fragements_feedback.xml, fragment_quiz_result.xmlare also located on:
+VicRoadsLicenseTest/app/src/main/res/layout/
+
+drawable files are on:
 VicRoadsLicenseTest/app/src/main/res/drawable/
+
+styles files are on:
 VicRoadsLicenseTest/app/src/main/res/styles/
 
 13/04/2019
