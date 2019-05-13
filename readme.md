@@ -9,7 +9,7 @@ PLATFORM: ANDROID
 
 GIT link: https://github.com/pawan13/VicRoadsLicenseTest.git
 
-Overview of the Project: 
+# Overview of the Project: 
 It is imperative to have all the information regarding rules, regulations and best practices while driving in the Victorian road for self and for other as well. VicRoads has an extensive process for people to follow to get driving license and knowledge test is one of the first hurdle to pass. This project aims to develop a mobile application to let users to practice questions for VicRoads learner test at any time. I believe this will not only give user confident they need to sit on exam, but they also have better understanding of rules and regulations, which helps them to drive safer.
 
 The proposed system will be developed in Android platform using some of the latest trend and some third-party libraries in its development. Android development has shift to Kotlin programming language from traditional Java programming language. Having increased community support and being supported by Google, I prefer using Kotlin for Android development for this project, however we can use Java as well at the same time. I’ll be using Room library for storing list of questions in database, retrofit for making API connection, Picasso for displaying images and other Android support libraries and Live Data API provided by Android to read data from database.
@@ -17,7 +17,7 @@ The proposed system will be developed in Android platform using some of the late
 At the start of this app, it would fetch list of questions from an API and save it locally in device. User can practice randomly selected quizzes or take a mock-up test with randomly generated list of quizzes from database.
 
 
-Directory structure:
+# Directory structure:
 Our folders like activities, adapters, db,fragments,interfaces,model,network repository and utils are located on
 VicRoadsLicenseTest/app/src/main/java/com/example/pawansiwakoti/vicroadslicensetest/
 
@@ -45,41 +45,41 @@ https://www.linkedin.com/learning/building-an-android-app-with-architecture-comp
 
 updated retrofitClientInstance.java file
 
-#API reference
+# API reference
 
-AnswerDao
+### AnswerDao
 -This interface is responsible for querying answers table,
 inserting, deleting answers from database as well as total numberof answers in database.
 
 
-AppDatabase
+### AppDatabase
 -SQLite database used throughout this app
 -It is a singleton class synchronized among different threads
 
 
-ArrayConverter
+### ArrayConverter
 - This is converter class for array
 - There is no datatype for array to save in database
 -therefore this is a class to convert array to string and back to array again
 
 
-Date Converter
+### Date Converter
 - This class helps us to convert data to long and back to date again in order to save it in database
 
 
-RetrofitClientInstance
+### RetrofitClientInstance
 -Singleton class to manage network connection using retrofit
 
 
-AppRepository
+### AppRepository
 -Singleton class to act as repository for data used in the app
 
 
-FeedbackFragment
+###FeedbackFragment
 -Screen to send feedback regarding the app or anything else
 -This will ask for email, name and message and will be saved in server
 
 
-QuizFragment
+### QuizFragment
 -Fragment to display one instance of quiz, which would have question, image, and options
 
