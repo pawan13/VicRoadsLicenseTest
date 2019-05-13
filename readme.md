@@ -35,3 +35,40 @@ References:
 https://www.linkedin.com/learning/building-an-android-app-with-architecture-components?fbclid=IwAR1QWvTy-mWWa5JIhu7VHwia8D1xk_qxhnMR4OFXXzXFeEwGt8j7LCHMXs0
 
 updated retrofitClientInstance.java file
+
+#API reference
+
+AnswerDao
+-This interface is responsible for querying answers table,
+inserting, deleting answers from database as well as total numberof answers in database.
+
+
+AppDatabase
+
+-SQLite database used throughout this app
+-It is a singleton class synchronized among different threads
+
+
+ArrayConverter
+- This is converter class for array
+- There is no datatype for array to save in database
+-therefore this is a class to convert array to string and back to array again
+
+
+Date Converter
+- This class helps us to convert data to long and back to date again in order to save it in database
+
+
+RetrofitClientInstance
+-Singleton class to manage network connection using retrofit
+
+AppRepository
+-Singleton class to act as repository for data used in the app
+
+FeedbackFragment
+-Screen to send feedback regarding the app or anything else
+-This will ask for email, name and message and will be saved in server
+
+QuizFragment
+-Fragment to display one instance of quiz, which would have question, image, and options
+
