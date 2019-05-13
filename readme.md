@@ -7,6 +7,8 @@ Project Title: VicRoads License Test
 
 PLATFORM: ANDROID
 
+GIT link: https://github.com/pawan13/VicRoadsLicenseTest.git
+
 Overview of the Project: 
 It is imperative to have all the information regarding rules, regulations and best practices while driving in the Victorian road for self and for other as well. VicRoads has an extensive process for people to follow to get driving license and knowledge test is one of the first hurdle to pass. This project aims to develop a mobile application to let users to practice questions for VicRoads learner test at any time. I believe this will not only give user confident they need to sit on exam, but they also have better understanding of rules and regulations, which helps them to drive safer.
 
@@ -16,7 +18,7 @@ At the start of this app, it would fetch list of questions from an API and save 
 
 
 Directory structure:
-My important files like MainActivity.java, Question.java, Result.java,HomePage.java, SplashScreen.java, db folder,model folder, network folder and repository folder are located on  as:
+My important files like , db folder,model folder, network folder, repository folderare located on  as:
 VicRoadsLicenseTest/app/src/main/java/com/example/pawansiwakoti/vicroadslicensetest/
 and their activityxml file are on
 VicRoadsLicenseTest/app/src/main/res/layout/
