@@ -7,7 +7,8 @@ Project Title: VicRoads License Test
 
 PLATFORM: ANDROID
 
-GIT link: https://github.com/pawan13/VicRoadsLicenseTest.git
+### GIT link
+https://github.com/pawan13/VicRoadsLicenseTest.git
 
 # Overview of the Project: 
 It is imperative to have all the information regarding rules, regulations and best practices while driving in the Victorian road for self and for other as well. VicRoads has an extensive process for people to follow to get driving license and knowledge test is one of the first hurdle to pass. This project aims to develop a mobile application to let users to practice questions for VicRoads learner test at any time. I believe this will not only give user confident they need to sit on exam, but they also have better understanding of rules and regulations, which helps them to drive safer.
@@ -18,22 +19,22 @@ At the start of this app, it would fetch list of questions from an API and save 
 
 
 # Directory structure:
-Our folders like activities, adapters, db,fragments,interfaces,model,network repository and utils are located on
+### Our folders like activities, adapters, db,fragments,interfaces,model,network repository and utils are located on
 VicRoadsLicenseTest/app/src/main/java/com/example/pawansiwakoti/vicroadslicensetest/
 
-activity.xml file like activity_feed-back, activity_home_page.xml, activity_general, activity_login.xml,activity_main.xml,activity_Prepare_Fortest.xm, activty_quiz.xml, activity_quiz_history.xml, activity_quiz_result.xml, activity_register,activity_result, activity_splash_screen.xml,activity_video.xml,cell_quiz-question.xml,header.xml,login_loyout.xml,register_layout.xml,video_view.xml are on
+### activity.xml file like activity_feed-back, activity_home_page.xml, activity_general, activity_login.xml,activity_main.xml,activity_Prepare_Fortest.xm, activty_quiz.xml, activity_quiz_history.xml, activity_quiz_result.xml, activity_register,activity_result, activity_splash_screen.xml,activity_video.xml,cell_quiz-question.xml,header.xml,login_loyout.xml,register_layout.xml,video_view.xml are on
 VicRoadsLicenseTest/app/src/main/res/layout/
 
-fragments like fragements_feedback.xml, fragment_quiz_result.xmlare also located on:
+### fragments like fragements_feedback.xml, fragment_quiz_result.xmlare also located on:
 VicRoadsLicenseTest/app/src/main/res/layout/
 
-drawable files are on:
+### drawable files are on:
 VicRoadsLicenseTest/app/src/main/res/drawable/
 
-styles files are on:
+### styles files are on:
 VicRoadsLicenseTest/app/src/main/res/styles/
 
-13/04/2019
+# 13/04/2019
 SplashScreen has been updated.
 Added few new folders db,model,network and repository are created:
 db folder has Appdatabase java class and Quiz Dao interface
@@ -75,7 +76,7 @@ inserting, deleting answers from database as well as total numberof answers in d
 -Singleton class to act as repository for data used in the app
 
 
-###FeedbackFragment
+### FeedbackFragment
 -Screen to send feedback regarding the app or anything else
 -This will ask for email, name and message and will be saved in server
 
