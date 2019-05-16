@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Blue"
     tools:context=".activities.SplashScreen">
     <ImageView
         android:id="@+id/vicimage"
@@ -16,8 +17,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="LicenceTest"
+        android:text="VicRoads Licence Test"
+        android:layout_centerInParent="true"
         android:textSize="30dp"
+        android:textColor="@color/Green"
+        android:textStyle="italic"
         android:layout_below="@+id/vicimage"/>
 
 
