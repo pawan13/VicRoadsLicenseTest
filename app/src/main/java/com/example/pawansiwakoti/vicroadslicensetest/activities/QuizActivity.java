@@ -72,7 +72,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         initViewModel();
         mBinding.buttonNext.setOnClickListener(this);
         mBinding.buttonPrev.setOnClickListener(this);
-         txtCountDown = findViewById(R.id.txtcountdown);
+        txtCountDown = findViewById(R.id.txtcountdown);
 
         textColorDefaultCd = txtCountDown.getTextColors();
         timeLeftInMillis = COUNTDOWN_IN_MILLIS;
@@ -104,7 +104,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
         }
     };
-   private void startCountDown() {
+    private void startCountDown() {
         countDownTimer = new CountDownTimer(timeLeftInMillis, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
@@ -169,7 +169,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         viewModel = ViewModelProviders.of(this).get(QuizViewModel.class);
         viewModel.getAllQuizes().observe(this, quizzes -> {
             if (quizzes == null) return;
-            List<Quiz> randomQuizzes = CommonMethods.getRandomXQuizzes(quizzes, 32);
+            List<Quiz> randomQuizzes = CommonMethods.getRandomXQuizzes(quizzes, 30);
             mQuizList = randomQuizzes;
             createAndSetFragments(randomQuizzes);
         });
