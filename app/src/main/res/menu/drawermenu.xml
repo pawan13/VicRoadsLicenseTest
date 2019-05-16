@@ -3,9 +3,7 @@
     xmlns:tools = "http://schemas.android.com/tools"
     tools:shownIn="navigation_view"
     >
-    <item
-        android:id="@+id/db"
-        android:title="@string/dashboard"/>
+// this are the item on our navigation bar
     <item
         android:id="@+id/article"
         android:title="@string/article"/>
@@ -21,8 +19,6 @@
     <item
         android:id="@+id/emailus"
         android:title="Email Us"/>
-    <item
-        android:id="@+id/logout"
-        android:title="@string/logout"/>
+
 
 </menu>

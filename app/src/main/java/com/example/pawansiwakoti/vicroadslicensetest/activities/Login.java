@@ -23,15 +23,15 @@ public class Login extends AppCompatActivity {
     TextView Register;
     Button Login;
 
-final String urllogin = "https://www.edu.au/~pksiwako/login_user.php";
+final String urllogin = "https://pk13.000webhostapp.com/login_user.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        /*Email = (EditText) findViewById(R.id.et_email);
-        Password = (EditText) findViewById(R.id.et_password);
-        Login = (Button) findViewById(R.id.btn_login);
-        Register = (TextView) findViewById(R.id.tv_register);*/
+        Email =  findViewById(R.id.et_email);
+        Password =  findViewById(R.id.et_password);
+        Login =  findViewById(R.id.btn_login);
+        Register =  findViewById(R.id.tv_register);
 
 
         Register.setOnClickListener(new View.OnClickListener() {

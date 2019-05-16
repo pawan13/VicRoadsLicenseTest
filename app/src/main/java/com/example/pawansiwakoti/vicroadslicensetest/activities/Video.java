@@ -21,10 +21,10 @@ public class Video extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video);
 
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        recyclerView =  findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
+//linked with the youtube video
         youTubeVideos.add(new YouTubeVideos("<iframe width=\"100%\" src=\"https://www.youtube.com/embed/KZhvx4Uu4bk\"" +
                 "frameBorder=\"0\" allowFullscreen></iframe>"));
         youTubeVideos.add(new YouTubeVideos("<iframe width=\"100%\" src=\"https://www.youtube.com/embed/50Mwks7ipXs\"" +

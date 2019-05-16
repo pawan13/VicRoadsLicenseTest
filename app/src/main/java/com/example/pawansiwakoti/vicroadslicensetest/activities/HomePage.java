@@ -26,7 +26,7 @@ public class HomePage extends AppCompatActivity {
         mdrawerLayout.addDrawerListener(mToggle);
         mToggle.syncState();
 
-        NavigationView mDrawer = (NavigationView) findViewById(R.id.Navigation);
+        NavigationView mDrawer =  findViewById(R.id.Navigation);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setupDrawerContent(mDrawer);
 
@@ -68,7 +68,15 @@ public class HomePage extends AppCompatActivity {
         });
     }*/
     }
-
+// On clicking the 3 lines it shows a navigation item
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(mToggle.onOptionsItemSelected(item)){
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+//on selecting a item they will perform the associated function
     public void selectItemDrawer(MenuItem menuItem) {
 
 

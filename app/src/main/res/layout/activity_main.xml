@@ -30,16 +30,6 @@
         android:text="@string/test_quiz"
         android:textColor="@color/white" />
 
-    <Button
-        android:id="@+id/QuizHistory"
-        android:layout_width="125dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginEnd="170dp"
-        android:layout_marginTop="20dp"
-        android:background="@android:color/holo_blue_light"
-        android:text="@string/quizhistory"
-        android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/Quit"

@@ -9,7 +9,7 @@
         android:id="@+id/vicimage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/vicroad"
+        android:src="@drawable/background_icon"
         android:layout_centerVertical="true"/>
 
     <TextView

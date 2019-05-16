@@ -19,7 +19,7 @@ public class PrepareFortest extends Activity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_prepare_fortest);
-        webView = (WebView)findViewById(R.id.webview);
+        webView = findViewById(R.id.webview);
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webView.loadUrl("https://www.vicroads.vic.gov.au/licences/your-ls/your-learner-handbooks");

@@ -36,21 +36,6 @@ public class SplashScreen extends AppCompatActivity {
             }
         });
 
-        /*Thread myThread = new Thread() {
-
-            public void run() {
-                try {
-                    sleep(5000);
-                        Intent intent = new Intent(getApplicationContext(), HomePage.class);
-                        startActivity(intent);
-                        finish();
-
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        };
-        myThread.start();*/
     }
 
     private void getDataFromApiFirstTime() {
@@ -64,7 +49,7 @@ public class SplashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashScreen.this, HomePage.class));
+                startActivity(new Intent(SplashScreen.this,HomePage.class));
                 finish();
             }
         }, 1000);

@@ -22,17 +22,17 @@ public class Register extends AppCompatActivity {
     EditText Name, Email, Password;
     Button Register;
 
-    final String url_Register = "https://www.deakin.edu.au/~pksiwako/phpfile";
+    final String url_Register = "https://pk13.000webhostapp.com/register_user.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        Name = (EditText)findViewById(R.id.et_name);
-        /*Email = (EditText)findViewById(R.id.et_email);
-        Password = (EditText)findViewById(R.id.et_password);*/
-        Register = (Button)findViewById(R.id.btn_register);
+        Name = findViewById(R.id.et_name);
+        Email = findViewById(R.id.et_email);
+        Password = findViewById(R.id.et_password);
+        Register = findViewById(R.id.btn_register);
 
 
        Register.setOnClickListener(new View.OnClickListener() {
@@ -52,11 +52,11 @@ public class Register extends AppCompatActivity {
         @Override
         protected  String doInBackground(String... strings) {
             String name = strings[0];
-            String Email = strings[1];
+            String email = strings[1];
             String password = strings[2];
 
-            String finalURL = url_Register + "?user_name=" + Name +
-                    "&user_id=" + Email + "&user_password=" + Password;
+            String finalURL = url_Register + "?user_name=" + name +
+                    "&user_id=" + email + "&user_password=" + password;
             try {
                 OkHttpClient okHttpClient = new OkHttpClient();
                 Request request = new Request.Builder()
@@ -72,7 +72,7 @@ public class Register extends AppCompatActivity {
                         if (result.equalsIgnoreCase("User registered Successfully")) {
 
                            show("Register Successfully");
-                            Intent intent = new Intent(Register.this, Login.class);
+                            Intent intent = new Intent(Register.this,Login.class);
                             startActivity(intent);
                             finish();
 
