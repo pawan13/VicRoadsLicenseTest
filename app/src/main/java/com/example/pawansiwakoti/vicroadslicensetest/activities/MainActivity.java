@@ -13,12 +13,10 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button Quit;
-
-    private Button btnQuiz, btnQuizTest;
+    private Button btnQuiz, btnQuizTest,Quit;
 
     private Questions mQuestions = new Questions();
-   // private String mAnswer;
+
     private int mScore = 0;
     private int mQuestionsLength = mQuestions.mQuestions.length;
 
@@ -49,10 +47,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-
-
-
-        Quit =  findViewById(R.id.Quit);
+        Quit = (Button) findViewById(R.id.Quit);
 
 
         Quit.setOnClickListener(new View.OnClickListener() {
@@ -64,13 +59,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
-            }
-        }
-
-
-
-
-
-
+    }
+}

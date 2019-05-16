@@ -169,7 +169,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         viewModel = ViewModelProviders.of(this).get(QuizViewModel.class);
         viewModel.getAllQuizes().observe(this, quizzes -> {
             if (quizzes == null) return;
-            List<Quiz> randomQuizzes = CommonMethods.getRandomXQuizzes(quizzes, 30);
+            List<Quiz> randomQuizzes = CommonMethods.getRandomXQuizzes(quizzes, 32);
             mQuizList = randomQuizzes;
             createAndSetFragments(randomQuizzes);
         });
