@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".activities.HomePage">
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/LLayout"
         android:orientation="vertical"
         android:background="@color/Green"
@@ -22,10 +22,8 @@
             android:textStyle="bold"
             android:text="Welcome to vicRoads License Test"
             android:textColor="@color/Blue"
-            android:layout_marginTop="300dp"
-            android:layout_marginLeft="100dp"
-            android:layout_marginRight="100dp"/>
-    </LinearLayout>
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
     <android.support.design.widget.NavigationView
         android:id="@+id/Navigation"
         app:headerLayout="@layout/header"
