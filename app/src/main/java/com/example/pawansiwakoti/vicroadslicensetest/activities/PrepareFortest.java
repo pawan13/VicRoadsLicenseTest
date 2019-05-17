@@ -17,8 +17,8 @@ public class PrepareFortest extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_prepare_fortest);
+       /* requestWindowFeature(Window.FEATURE_NO_TITLE);
         webView = findViewById(R.id.webview);
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
@@ -36,6 +36,7 @@ public class PrepareFortest extends Activity {
 
         }else {
         super.onBackPressed();
-    }
+    }*/
+       //This is commented because of copyright issue
     }
 }

@@ -21,7 +21,7 @@ public class Video extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video);
 
-        recyclerView =  findViewById(R.id.recyclerView);
+       /* recyclerView =  findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 //linked with the youtube video
@@ -68,6 +68,7 @@ public class Video extends AppCompatActivity {
 
 
         VideoAdapter videoAdapter = new VideoAdapter(youTubeVideos);
-        recyclerView.setAdapter(videoAdapter);
+        recyclerView.setAdapter(videoAdapter);*/
+       //This is commented because of copyright issue
     }
 }
