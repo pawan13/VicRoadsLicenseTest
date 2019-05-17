@@ -99,5 +99,12 @@ connected feedback to database
 Errors fixed and worked on polishing
 Timer created for the quiz 
 
+ # Week 9, Sunday 12 May [Nabin] 
+ Fixed wrong answer displaying as right
+ # Week 10, Monday 13 May [Nabin] 
+ Refactored files and commented , polishing 
+ 
+  # Week 10, Sunday 16 May [Nabin] 
+update number of quiz, working on video making 
 
 
